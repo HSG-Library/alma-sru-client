@@ -1,0 +1,42 @@
+package ch.unisg.library.systemlibrarian.scripts;
+
+import ch.unisg.library.systemlibrarian.file.ExcelInputDataHelper;
+import ch.unisg.library.systemlibrarian.file.ExcelOutputDataHelper;
+import ch.unisg.library.systemlibrarian.sru.SruClient;
+import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
+import ch.unisg.library.systemlibrarian.sru.response.Record;
+
+import java.io.File;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public interface SruScript {
+
+	File getInput();
+
+	File getOutput();
+
+	String getBaseUrl();
+
+	default Optional<Record> getRecord(final String mmsId) {
+		final String query = "mms_id=" + mmsId;
+		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
+				.query(query);
+		SruClient sru = new SruClient();
+		return sru.getSingleRecord(urlBuilder);
+	}
+
+	default List<String> getMmsIdsFromExcel(final String column) {
+		return new ExcelInputDataHelper(getInput()).loadNumbersColumn(column);
+	}
+
+	default void writeToExcel(List<List<String>> rows) {
+		new ExcelOutputDataHelper(getOutput()).writeToExcel(rows);
+	}
+
+	default void writeToExcel(Map<String, List<String>> rows) {
+		new ExcelOutputDataHelper(getOutput()).writeToExcel(rows);
+	}
+}

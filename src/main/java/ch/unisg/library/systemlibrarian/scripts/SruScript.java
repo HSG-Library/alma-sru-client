@@ -10,15 +10,22 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 public interface SruScript {
 
+	SruScript input(final String path, final String column);
+
 	File getInput();
+
+	SruScript output(final String path);
 
 	File getOutput();
 
 	String getBaseUrl();
+
+	Map<String, List<String>> getResults(List<String> mmsIds);
+
+	void processFiles();
 
 	default Optional<Record> getRecord(final String mmsId) {
 		final String query = "mms_id=" + mmsId;

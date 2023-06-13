@@ -14,17 +14,26 @@ import java.util.stream.Stream;
 public class FindRelatedRecords implements SruScript {
 
 	private static final String BASE = "https://eu03.alma.exlibrisgroup.com/view/sru/41SLSP_NETWORK";
-	private final File input;
-	private final File output;
+	private File input;
+	private File output;
+	private String column;
 
-	public FindRelatedRecords(final String inputXlsxPath, final String outputXlsxPath) {
-		this.input = new File(inputXlsxPath);
-		this.output = new File(outputXlsxPath);
+	@Override
+	public SruScript input(final String path, final String column) {
+		this.input = new File(path);
+		this.column = column;
+		return this;
 	}
 
 	@Override
 	public File getInput() {
 		return input;
+	}
+
+	@Override
+	public SruScript output(String path) {
+		this.output = new File(path);
+		return this;
 	}
 
 	@Override
@@ -37,14 +46,22 @@ public class FindRelatedRecords implements SruScript {
 		return BASE;
 	}
 
-	public void findRelatedRecords(final String column) {
-		List<String> mmsIdsFromExcel = getMmsIdsFromExcel(column);
+	@Override
+	public Map<String, List<String>> getResults(List<String> mmsIds) {
 		final Map<String, List<String>> results = new HashMap<>();
-		mmsIdsFromExcel.stream().parallel().forEach(mmsId -> {
+		mmsIds.stream().parallel().forEach(mmsId -> {
 			Stream<String> systemNumbers = get35a(mmsId);
-			List<String> rootRecords = findRelatedRecord(systemNumbers);
-			results.put(mmsId, rootRecords);
+			List<String> related = findRelatedRecord(systemNumbers);
+			related.remove(mmsId);
+			results.put(mmsId, related);
 		});
+		return results;
+	}
+
+	@Override
+	public void processFiles() {
+		final List<String> mmsIdsFromExcel = getMmsIdsFromExcel(column);
+		final Map<String, List<String>> results = getResults(mmsIdsFromExcel);
 		writeToExcel(results);
 	}
 
@@ -70,6 +87,7 @@ public class FindRelatedRecords implements SruScript {
 		Stream<Record> records = response.map(sru::getRecordsFromResponse)
 				.orElse(Stream.empty());
 		return records
+				.skip(1)
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)
 				.map(Controlfield::getText)

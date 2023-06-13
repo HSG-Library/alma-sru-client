@@ -14,17 +14,26 @@ import java.util.stream.Stream;
 
 public class FindRootRecords implements SruScript {
 	private static final String BASE = "https://eu03.alma.exlibrisgroup.com/view/sru/41SLSP_NETWORK";
-	private final File input;
-	private final File output;
+	private File input;
+	private File output;
+	private String column;
 
-	public FindRootRecords(final String inputXlsxPath, final String outputXlsxPath) {
-		this.input = new File(inputXlsxPath);
-		this.output = new File(outputXlsxPath);
+	@Override
+	public SruScript input(final String path, final String column) {
+		this.input = new File(path);
+		this.column = column;
+		return this;
 	}
 
 	@Override
 	public File getInput() {
 		return input;
+	}
+
+	@Override
+	public SruScript output(String path) {
+		this.output = new File(path);
+		return this;
 	}
 
 	@Override
@@ -37,14 +46,21 @@ public class FindRootRecords implements SruScript {
 		return BASE;
 	}
 
-	public void getRootRecords(final String mmsIdColumn) {
-		List<String> mmsIdNz = getMmsIdsFromExcel(mmsIdColumn);
+	@Override
+	public Map<String, List<String>> getResults(List<String> mmsIds) {
 		final Map<String, List<String>> results = new HashMap<>();
-		mmsIdNz.stream().parallel().forEach(mmsId -> {
+		mmsIds.stream().parallel().forEach(mmsId -> {
 			Stream<String> systemNumbers = getOtherSystemNumbers(mmsId);
 			List<String> rootRecords = searchRootRecords(systemNumbers);
 			results.put(mmsId, rootRecords);
 		});
+		return results;
+	}
+
+	@Override
+	public void processFiles() {
+		final List<String> mmsIdNz = getMmsIdsFromExcel(column);
+		final Map<String, List<String>> results = getResults(mmsIdNz);
 		writeToExcel(results);
 	}
 

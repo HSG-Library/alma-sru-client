@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+	<version>1.2</version>
+	<numberOfRecords>1</numberOfRecords>
+	<records>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00910nam a2200217uc 4500</leader>
+					<controlfield tag="001">991001145239705501</controlfield>
+					<controlfield tag="005">20201223013828.0</controlfield>
+					<controlfield tag="008">940827s1982    sz            00| | ger d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005197015-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005197015</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000998636HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">Sz</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="245">
+						<subfield code="a">Zur Frage der Milderung der steuerlichen Doppelbelastung von Aktiengesellschaft und Aktionär</subfield>
+						<subfield code="b">Bericht einer Expertenkommission</subfield>
+						<subfield code="c">Leo Fromer ... [et al.]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="264">
+						<subfield code="a">Basel [Postfach 2879, 4002]</subfield>
+						<subfield code="b">Schutzorganisation der privaten Aktiengesellschaften</subfield>
+						<subfield code="c">1982</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">VIII, 123 S.</subfield>
+						<subfield code="c">30 cm.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">PA</subfield>
+						<subfield code="a">Einkommen- und Vermögensteuern, Ertrag- und Kapitalsteuern : Allgemeines</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Fromer, Leo</subfield>
+					</datafield>
+					<datafield ind1="2" ind2=" " tag="710">
+						<subfield code="a">Schutzorganisation der Privaten Aktiengesellschaften</subfield>
+						<subfield code="0">(DE-588)2021490-X</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="1" tag="852">
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="6">999986360105506</subfield>
+						<subfield code="9">P</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991001145239705501</recordIdentifier>
+			<recordPosition>1</recordPosition>
+		</record>
+	</records>
+	<extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+		<xb:exact>true</xb:exact>
+		<xb:responseDate>2023-06-13T10:53:36+0200</xb:responseDate>
+	</extraResponseData>
+</searchRetrieveResponse>

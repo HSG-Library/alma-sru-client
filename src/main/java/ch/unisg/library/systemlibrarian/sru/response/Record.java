@@ -17,19 +17,19 @@ public class Record {
 	}
 
 	public Optional<Controlfield> getControlfield(final String tag) {
-		final String query = "//controlfield[@tag=\"" + tag + "\"]";
+		final String query = "./controlfield[@tag=\"" + tag + "\"]";
 		NodeList controlfields = xPathQuery(recordNode, query);
-		return transformToControlfiled(controlfields);
+		return transformToControlfield(controlfields);
 	}
 
 	public List<Datafield> findDatafield(final String tag) {
-		final String query = "//datafield[@tag=\"" + tag + "\"]";
+		final String query = "./datafield[@tag=\"" + tag + "\"]";
 		NodeList datafields = xPathQuery(recordNode, query);
 		return transformToDatafields(datafields);
 	}
 
 	public List<Subfield> findSubfield(final String tag, final String code) {
-		final String query = "//datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
+		final String query = "./datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
 		NodeList subfields = xPathQuery(recordNode, query);
 		return transformToSubfields(subfields);
 	}
@@ -62,7 +62,7 @@ public class Record {
 				.collect(Collectors.toList());
 	}
 
-	private Optional<Controlfield> transformToControlfiled(final NodeList nodeList) {
+	private Optional<Controlfield> transformToControlfield(final NodeList nodeList) {
 		if (nodeList.getLength() < 1) {
 			return Optional.empty();
 		}

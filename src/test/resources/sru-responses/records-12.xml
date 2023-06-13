@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+	<version>1.2</version>
+	<numberOfRecords>12</numberOfRecords>
+	<records>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00711naa a2200193 c 4500</leader>
+					<controlfield tag="001">991157836229705501</controlfield>
+					<controlfield tag="005">20201223020236.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005230632-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005230632</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993591HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Wilcox, Brian</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Assessing the Performance of Schools</subfield>
+						<subfield code="c">Brian Wilcox</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">47-59</subfield>
+						<subfield code="q">0047</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991157836229705501</recordIdentifier>
+			<recordPosition>1</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00697naa a2200193 c 4500</leader>
+					<controlfield tag="001">991069215049705501</controlfield>
+					<controlfield tag="005">20201223014601.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005232260-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005232260</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993598HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Henkel, Mary</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">&lt;&lt;The&gt;&gt; Audit Commission</subfield>
+						<subfield code="c">Mary Henkel</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">72-86</subfield>
+						<subfield code="q">0072</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991069215049705501</recordIdentifier>
+			<recordPosition>2</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00742naa a2200193 c 4500</leader>
+					<controlfield tag="001">991124711169705501</controlfield>
+					<controlfield tag="005">20201223015446.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005226171-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005226171</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993185HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Gray, Andrew</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Changes in Resource Management in the Social Services</subfield>
+						<subfield code="c">Andrew Gray, Bill Jenkins</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">179-194</subfield>
+						<subfield code="q">0179</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991124711169705501</recordIdentifier>
+			<recordPosition>3</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00761naa a2200193 c 4500</leader>
+					<controlfield tag="001">991109011219705501</controlfield>
+					<controlfield tag="005">20201223015926.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005226953-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005226953</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993283HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Long, Andrew F.</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Evaluating Health Services: from Value for Money to the Valuing of Health Services</subfield>
+						<subfield code="c">Andrew F. Long</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">59-72</subfield>
+						<subfield code="q">0059</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991109011219705501</recordIdentifier>
+			<recordPosition>4</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00745naa a2200193 c 4500</leader>
+					<controlfield tag="001">991008097069705501</controlfield>
+					<controlfield tag="005">20201223013844.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005236355-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005236355</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993926HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Harrison, Stephen</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Evaluating Public Services: Reflections</subfield>
+						<subfield code="c">Stephen Harrison, Christopher Pollitt</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">101-105</subfield>
+						<subfield code="q">0101</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991008097069705501</recordIdentifier>
+			<recordPosition>5</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00719naa a2200193 c 4500</leader>
+					<controlfield tag="001">991140465259705501</controlfield>
+					<controlfield tag="005">20201223020417.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005222427-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005222427</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993105HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Bourn, John</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Evaluating the Performance of Central Government</subfield>
+						<subfield code="c">John Bourn</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">25-47</subfield>
+						<subfield code="q">0025</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991140465259705501</recordIdentifier>
+			<recordPosition>6</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00709nam a22002172c 4500</leader>
+					<controlfield tag="001">991001145469705501</controlfield>
+					<controlfield tag="005">20201223013828.0</controlfield>
+					<controlfield tag="008">180606s1992    xx ||||| ---- 00| ||ger d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">063116961X</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005212308-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005212308</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Pollitt, Christopher</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Handbook of Public Services Management</subfield>
+						<subfield code="c">Christopher Pollitt</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Oxford</subfield>
+						<subfield code="b">Blackwell</subfield>
+						<subfield code="c">1992</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">283 Seiten</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="1" tag="852">
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="6">999925620105506</subfield>
+						<subfield code="9">P</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991001145469705501</recordIdentifier>
+			<recordPosition>7</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00745naa a2200193 c 4500</leader>
+					<controlfield tag="001">991036913449705501</controlfield>
+					<controlfield tag="005">20201223014015.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005216990-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005216990</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000992774HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Salaman, Graeme</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">&lt;&lt;The&gt;&gt; Management of Staff: the Case of the London Fire Brigade</subfield>
+						<subfield code="c">Graeme Salaman</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">124-132</subfield>
+						<subfield code="q">0124</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991036913449705501</recordIdentifier>
+			<recordPosition>8</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00746naa a2200193 c 4500</leader>
+					<controlfield tag="001">991034792199705501</controlfield>
+					<controlfield tag="005">20201223014031.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005221579-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005221579</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000992986HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Jankins, Kate</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Organizational Design and Development: the Civil Service in the 1980s</subfield>
+						<subfield code="c">Kate Jankins</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">211-219</subfield>
+						<subfield code="q">0211</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991034792199705501</recordIdentifier>
+			<recordPosition>9</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00719naa a2200193 c 4500</leader>
+					<controlfield tag="001">991085511559705501</controlfield>
+					<controlfield tag="005">20201223014843.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005221668-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005221668</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000992998HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Wilkie, Roy</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">&lt;&lt;The&gt;&gt; Organizational Structure of the Police</subfield>
+						<subfield code="c">Roy Wilkie</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">247-258</subfield>
+						<subfield code="q">0247</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991085511559705501</recordIdentifier>
+			<recordPosition>10</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00756naa a2200193 c 4500</leader>
+					<controlfield tag="001">991160428399705501</controlfield>
+					<controlfield tag="005">20201223020316.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005211913-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005211913</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000992503HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Burningham, David</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">&lt;&lt;An&gt;&gt; Overview of the Use of Performance Indicators in Local Government</subfield>
+						<subfield code="c">David Burningham</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">86-101</subfield>
+						<subfield code="q">0086</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991160428399705501</recordIdentifier>
+			<recordPosition>11</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>00742naa a2200193 c 4500</leader>
+					<controlfield tag="001">991018894709705501</controlfield>
+					<controlfield tag="005">20201223014534.0</controlfield>
+					<controlfield tag="008">180606nuuuuuuuuxx ||||| ---- 00| ||und d</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(swissbib)005235782-41slsp_network</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">005235782</subfield>
+						<subfield code="9">ExL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(IDSSG)000993845HSB01</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">SzZuIDS HSG</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="d">CH-ZuSLS</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Train, Chris J.</subfield>
+						<subfield code="e">Verfasser</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Strategic Management in the Prison Service</subfield>
+						<subfield code="c">Chris J. Train, Christine Steward</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="690">
+						<subfield code="e">YQ</subfield>
+						<subfield code="a">Wirtschaftswissenschaften : Spezielle Betriebswirtschaftslehren</subfield>
+						<subfield code="2">hsg-iff</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="773">
+						<subfield code="t">Pollitt,Christopher: Handbook of Public Services Management</subfield>
+						<subfield code="g">258-268</subfield>
+						<subfield code="q">0258</subfield>
+						<subfield code="w">(IDSSG)000992562HSB01</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>991018894709705501</recordIdentifier>
+			<recordPosition>12</recordPosition>
+		</record>
+	</records>
+	<extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+		<xb:exact>true</xb:exact>
+		<xb:responseDate>2023-06-13T10:53:36+0200</xb:responseDate>
+	</extraResponseData>
+</searchRetrieveResponse>

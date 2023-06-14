@@ -87,7 +87,6 @@ public class FindRelatedRecords implements SruScript {
 		Stream<Record> records = response.map(sru::getRecordsFromResponse)
 				.orElse(Stream.empty());
 		return records
-				.skip(1)
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)
 				.map(Controlfield::getText)

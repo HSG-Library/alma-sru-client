@@ -16,7 +16,11 @@
 		<version.logback-classic>1.4.7</version.logback-classic>
 		<version.commons-lang3>3.12.0</version.commons-lang3>
 		<version.fastexcel>0.15.4</version.fastexcel>
+		<version.javapoet>1.13.0</version.javapoet>
 		<version.junit-jupiter>5.9.3</version.junit-jupiter>
+		<version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
+		<version.maven-surefire-plugin>3.1.0</version.maven-surefire-plugin>
+		<version.exec-maven-plugin>3.1.0</version.exec-maven-plugin>
 	</properties>
 
 	<dependencies>
@@ -40,6 +44,11 @@
 			<artifactId>fastexcel-reader</artifactId>
 			<version>${version.fastexcel}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.squareup</groupId>
+			<artifactId>javapoet</artifactId>
+			<version>${version.javapoet}</version>
+		</dependency>
 		<!-- Test -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -53,8 +62,56 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${version.maven-compiler-plugin}</version>
+				<configuration>
+					<source>17</source>
+					<target>17</target>
+					<generatedSourcesDirectory>${project.build.directory}/generated-sources</generatedSourcesDirectory>
+					<compilerArgs>
+						<arg>-Ajava.io.tmpdir=${project.build.directory}/generated-sources</arg>
+					</compilerArgs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>compile-source-generator</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<includes>
+								<include>ch/unisg/library/systemlibrarian/sru/generator/*.java</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${version.exec-maven-plugin}</version>
+				<executions>
+					<execution>
+						<id>generate</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>ch.unisg.library.systemlibrarian.sru.generator.SruQueryBuilderGenerator</mainClass>
+					<arguments>
+						<!--output directory -->
+						<argument>target/generated-sources/</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>${version.maven-surefire-plugin}</version>
 			</plugin>
 		</plugins>
 	</build>

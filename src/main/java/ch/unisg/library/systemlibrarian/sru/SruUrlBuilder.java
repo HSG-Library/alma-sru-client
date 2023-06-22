@@ -1,7 +1,7 @@
 package ch.unisg.library.systemlibrarian.sru;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
+import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
+
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -49,14 +49,12 @@ public class SruUrlBuilder {
 		return this;
 	}
 
-	public SruUrlBuilder query(final String query) {
-		this.query = URLEncoder.encode(query, StandardCharsets.UTF_8);
+	public SruUrlBuilder query(final SruQuery query) {
+		this.query = query.string();
 		return this;
 	}
 
 	public String build() {
-
-
 		final Map<String, String> parameters = Map.of(
 				VERSION, this.version.getValue(),
 				OPERATION, this.operation.getValue(),
@@ -113,7 +111,7 @@ public class SruUrlBuilder {
 		CNMARCXML("cnmarcxml"),
 		ISOHOLD("isohold");
 
-		private String value;
+		private final String value;
 
 		RecordSchema(final String value) {
 			this.value = value;
@@ -123,6 +121,4 @@ public class SruUrlBuilder {
 			return this.value;
 		}
 	}
-
-
 }

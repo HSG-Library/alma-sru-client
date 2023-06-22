@@ -2,12 +2,16 @@ package ch.unisg.library.systemlibrarian.scripts;
 
 import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
+import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
 import ch.unisg.library.systemlibrarian.sru.response.Record;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
 
 import java.io.File;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -81,11 +85,9 @@ public class FindRelatedRecords implements SruScript {
 				.map(number -> "other_system_number==" + number)
 				.collect(Collectors.joining(" OR "));
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
-				.query(query);
+				.query(new SruQuery(query));
 		SruClient sru = new SruClient();
-		Optional<String> response = sru.request(urlBuilder);
-		Stream<Record> records = response.map(sru::getRecordsFromResponse)
-				.orElse(Stream.empty());
+		Stream<Record> records = sru.getAllRecords(urlBuilder);
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

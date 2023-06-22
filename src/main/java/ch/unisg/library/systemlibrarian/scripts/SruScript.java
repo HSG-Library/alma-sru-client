@@ -4,6 +4,7 @@ import ch.unisg.library.systemlibrarian.file.ExcelInputDataHelper;
 import ch.unisg.library.systemlibrarian.file.ExcelOutputDataHelper;
 import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
+import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Record;
 
 import java.io.File;
@@ -30,7 +31,7 @@ public interface SruScript {
 	default Optional<Record> getRecord(final String mmsId) {
 		final String query = "mms_id=" + mmsId;
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
-				.query(query);
+				.query(new SruQuery(query));
 		SruClient sru = new SruClient();
 		return sru.getSingleRecord(urlBuilder);
 	}

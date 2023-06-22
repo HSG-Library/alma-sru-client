@@ -2,6 +2,7 @@ package ch.unisg.library.systemlibrarian.scripts;
 
 import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
+import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
 import ch.unisg.library.systemlibrarian.sru.response.Record;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
@@ -104,11 +105,9 @@ public class FindRootRecords implements SruScript {
 		queryParts.add("other_system_number_active_035==" + id);
 		final String query = String.join(" OR ", queryParts);
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(BASE)
-				.query(query);
+				.query(new SruQuery(query));
 		SruClient sru = new SruClient();
-		Optional<String> response = sru.request(urlBuilder);
-		Stream<Record> records = response.map(sru::getRecordsFromResponse)
-				.orElse(Stream.empty());
+		Stream<Record> records = sru.getAllRecords(urlBuilder);
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

@@ -4,13 +4,10 @@ import ch.unisg.library.systemlibrarian.scripts.FindRelatedRecords;
 import ch.unisg.library.systemlibrarian.scripts.FindRootRecords;
 import ch.unisg.library.systemlibrarian.scripts.SruScript;
 
-import java.util.List;
-import java.util.Map;
-
 public class Main {
 	public static void main(String[] args) {
 		//scriptFindRootRecords();
-		scriptFindRelatedRecords();
+		//scriptFindRelatedRecords();
 	}
 
 	public static void scriptFindRootRecords() {

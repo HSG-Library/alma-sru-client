@@ -18,7 +18,7 @@ public class SruClient {
 	public Optional<Record> getSingleRecord(SruUrlBuilder urlBuilder) {
 		urlBuilder.maximumRecords(1L);
 		return call(urlBuilder)
-				.map(this::getRecords)
+				.map(this::extractRecords)
 				.orElse(Stream.empty())
 				.findFirst();
 	}
@@ -28,10 +28,11 @@ public class SruClient {
 		return LongStream.iterate(0L, i -> i + pageSize)  // Creates an infinite Stream with elements 0, 4, 8, 12, ...
 				.mapToObj(offset -> call(urlBuilder, offset, pageSize))
 				.flatMap(Optional::stream)
-				.flatMap(this::getRecords);
+				.takeWhile(document -> hasRecords(document))
+				.flatMap(this::extractRecords);
 	}
 
-	public Stream<Record> getRecords(final Document sruDocument) {
+	public Stream<Record> extractRecords(final Document sruDocument) {
 		NodeList nodeList = new XPathHelper().query(sruDocument, "//recordData/*");
 		return IntStream.range(0, nodeList.getLength())
 				.mapToObj(nodeList::item)
@@ -59,5 +60,10 @@ public class SruClient {
 		} catch (URISyntaxException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	private boolean hasRecords(final Document document) {
+		final NodeList nodeList = new XPathHelper().query(document, "//recordData/*");
+		return nodeList.getLength() > 0;
 	}
 }

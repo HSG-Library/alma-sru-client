@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class FindRelatedRecords implements SruScript {
+public class FindRelatedRecords implements SruExcelInputOutputScript {
 
 	private static final String BASE = "https://eu03.alma.exlibrisgroup.com/view/sru/41SLSP_NETWORK";
 	private File input;
@@ -23,7 +23,7 @@ public class FindRelatedRecords implements SruScript {
 	private String column;
 
 	@Override
-	public SruScript input(final String path, final String column) {
+	public SruExcelInputOutputScript input(final String path, final String column) {
 		this.input = new File(path);
 		this.column = column;
 		return this;
@@ -35,7 +35,7 @@ public class FindRelatedRecords implements SruScript {
 	}
 
 	@Override
-	public SruScript output(String path) {
+	public SruExcelInputOutputScript output(String path) {
 		this.output = new File(path);
 		return this;
 	}

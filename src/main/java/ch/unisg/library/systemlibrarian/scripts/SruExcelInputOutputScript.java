@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public interface SruScript {
+public interface SruExcelInputOutputScript {
 
-	SruScript input(final String path, final String column);
+	SruExcelInputOutputScript input(final String path, final String column);
 
 	File getInput();
 
-	SruScript output(final String path);
+	SruExcelInputOutputScript output(final String path);
 
 	File getOutput();
 

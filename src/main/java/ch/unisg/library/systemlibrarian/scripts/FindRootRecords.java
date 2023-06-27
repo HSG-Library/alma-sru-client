@@ -13,14 +13,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
-public class FindRootRecords implements SruScript {
+public class FindRootRecords implements SruExcelInputOutputScript {
 	private static final String BASE = "https://eu03.alma.exlibrisgroup.com/view/sru/41SLSP_NETWORK";
 	private File input;
 	private File output;
 	private String column;
 
 	@Override
-	public SruScript input(final String path, final String column) {
+	public SruExcelInputOutputScript input(final String path, final String column) {
 		this.input = new File(path);
 		this.column = column;
 		return this;
@@ -32,7 +32,7 @@ public class FindRootRecords implements SruScript {
 	}
 
 	@Override
-	public SruScript output(String path) {
+	public SruExcelInputOutputScript output(String path) {
 		this.output = new File(path);
 		return this;
 	}

@@ -57,30 +57,6 @@ public class SruIndexMeta {
 		return sort;
 	}
 
-	public static class Factory {
-		public SruIndexMeta create(final Node indexNode) {
-			final XPathHelper xPathHelper = new XPathHelper();
-			final String title = xPathHelper.queryText(indexNode, "./title/text()");
-			final boolean sortable = xPathHelper.queryExists(indexNode, "./@sort");
-			final String name = xPathHelper.queryText(indexNode, "./map/name/text()");
-			final String indexSet = xPathHelper.queryText(indexNode, "./map/name/@set");
-			final List<Relation> relations = new ArrayList<>();
-			final boolean emptyTerm = xPathHelper.queryExists(indexNode, "./configInfo/supports[@type='emptyTerm']");
-			final NodeList supports = xPathHelper.query(indexNode, "./configInfo/supports");
-			IntStream.range(0, supports.getLength())
-					.mapToObj(supports::item)
-					.forEach(supportsNode -> {
-						final String type = xPathHelper.queryText(supportsNode, "./@type");
-						if ("relation".equals(type)) {
-							final String relationValue = supportsNode.getTextContent();
-							Relation.findByOperator(relationValue)
-									.ifPresent(relations::add);
-						}
-					});
-			return new SruIndexMeta(title, name, indexSet, relations, emptyTerm, sortable);
-		}
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -117,5 +93,29 @@ public class SruIndexMeta {
 				", emptyTerm=" + emptyTerm +
 				", sort=" + sort +
 				'}';
+	}
+
+	public static class Factory {
+		public SruIndexMeta create(final Node indexNode) {
+			final XPathHelper xPathHelper = new XPathHelper();
+			final String title = xPathHelper.queryText(indexNode, "./title/text()");
+			final boolean sortable = xPathHelper.queryExists(indexNode, "./@sort");
+			final String name = xPathHelper.queryText(indexNode, "./map/name/text()");
+			final String indexSet = xPathHelper.queryText(indexNode, "./map/name/@set");
+			final List<Relation> relations = new ArrayList<>();
+			final boolean emptyTerm = xPathHelper.queryExists(indexNode, "./configInfo/supports[@type='emptyTerm']");
+			final NodeList supports = xPathHelper.query(indexNode, "./configInfo/supports");
+			IntStream.range(0, supports.getLength())
+					.mapToObj(supports::item)
+					.forEach(supportsNode -> {
+						final String type = xPathHelper.queryText(supportsNode, "./@type");
+						if ("relation".equals(type)) {
+							final String relationValue = supportsNode.getTextContent();
+							Relation.findByOperator(relationValue)
+									.ifPresent(relations::add);
+						}
+					});
+			return new SruIndexMeta(title, name, indexSet, relations, emptyTerm, sortable);
+		}
 	}
 }

@@ -22,20 +22,6 @@ public class Subfield {
 		return text;
 	}
 
-	public static class Creator {
-		private final Node node;
-
-		public Creator(final Node node) {
-			this.node = node;
-		}
-
-		public Subfield create() {
-			final String code = node.getAttributes().getNamedItem("code").getNodeValue();
-			final String text = node.getTextContent();
-			return new Subfield(code, text);
-		}
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -60,5 +46,19 @@ public class Subfield {
 				"code='" + code + '\'' +
 				", text='" + text + '\'' +
 				'}';
+	}
+
+	public static class Creator {
+		private final Node node;
+
+		public Creator(final Node node) {
+			this.node = node;
+		}
+
+		public Subfield create() {
+			final String code = node.getAttributes().getNamedItem("code").getNodeValue();
+			final String text = node.getTextContent();
+			return new Subfield(code, text);
+		}
 	}
 }

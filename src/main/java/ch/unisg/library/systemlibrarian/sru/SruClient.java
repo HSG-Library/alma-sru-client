@@ -28,7 +28,7 @@ public class SruClient {
 		return LongStream.iterate(0L, i -> i + pageSize)  // Creates an infinite Stream with elements 0, 4, 8, 12, ...
 				.mapToObj(offset -> call(urlBuilder, offset, pageSize))
 				.flatMap(Optional::stream)
-				.takeWhile(document -> hasRecords(document))
+				.takeWhile(this::hasRecords)
 				.flatMap(this::extractRecords);
 	}
 

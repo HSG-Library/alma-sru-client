@@ -22,20 +22,6 @@ public class Controlfield {
 		return text;
 	}
 
-	public static class Creator {
-		private final Node node;
-
-		public Creator(final Node node) {
-			this.node = node;
-		}
-
-		public Controlfield create() {
-			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
-			final String text = node.getTextContent();
-			return new Controlfield(tag, text);
-		}
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -60,5 +46,19 @@ public class Controlfield {
 				"tag='" + tag + '\'' +
 				", text='" + text + '\'' +
 				'}';
+	}
+
+	public static class Creator {
+		private final Node node;
+
+		public Creator(final Node node) {
+			this.node = node;
+		}
+
+		public Controlfield create() {
+			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
+			final String text = node.getTextContent();
+			return new Controlfield(tag, text);
+		}
 	}
 }

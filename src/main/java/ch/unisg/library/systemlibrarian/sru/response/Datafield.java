@@ -44,28 +44,6 @@ public class Datafield {
 				.findFirst();
 	}
 
-	public static class Creator {
-		private final Node node;
-
-		public Creator(final Node node) {
-			this.node = node;
-		}
-
-		public Datafield create() {
-			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
-			final String ind1 = node.getAttributes().getNamedItem("ind1").getNodeValue();
-			final String ind2 = node.getAttributes().getNamedItem("ind2").getNodeValue();
-			NodeList childNodes = node.getChildNodes();
-			List<Subfield> subfields = IntStream.range(0, childNodes.getLength())
-					.mapToObj(childNodes::item)
-					.filter(node -> node.getNodeType() != Node.TEXT_NODE)
-					.map(Subfield.Creator::new)
-					.map(Subfield.Creator::create)
-					.collect(Collectors.toList());
-			return new Datafield(tag, ind1, ind2, subfields);
-		}
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -96,5 +74,27 @@ public class Datafield {
 				", ind2='" + ind2 + '\'' +
 				", subfields=" + subfields +
 				'}';
+	}
+
+	public static class Creator {
+		private final Node node;
+
+		public Creator(final Node node) {
+			this.node = node;
+		}
+
+		public Datafield create() {
+			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
+			final String ind1 = node.getAttributes().getNamedItem("ind1").getNodeValue();
+			final String ind2 = node.getAttributes().getNamedItem("ind2").getNodeValue();
+			NodeList childNodes = node.getChildNodes();
+			List<Subfield> subfields = IntStream.range(0, childNodes.getLength())
+					.mapToObj(childNodes::item)
+					.filter(node -> node.getNodeType() != Node.TEXT_NODE)
+					.map(Subfield.Creator::new)
+					.map(Subfield.Creator::create)
+					.collect(Collectors.toList());
+			return new Datafield(tag, ind1, ind2, subfields);
+		}
 	}
 }

@@ -11,9 +11,8 @@ import java.lang.invoke.MethodHandles;
 
 public class XPathHelper {
 
-	private final XPathFactory xPathFactory;
-
 	private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+	private final XPathFactory xPathFactory;
 
 	public XPathHelper() {
 		this.xPathFactory = XPathFactory.newInstance();

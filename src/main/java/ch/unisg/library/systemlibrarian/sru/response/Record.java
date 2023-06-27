@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 public class Record {
 	private final Node recordNode;
 
-	 Record(final Node recordNode) {
+	Record(final Node recordNode) {
 		this.recordNode = recordNode;
 	}
 
@@ -76,18 +76,6 @@ public class Record {
 				.findFirst();
 	}
 
-	public static class Creator {
-		private final Node node;
-
-		public Creator(final Node node) {
-			this.node = node;
-		}
-
-		public Record create() {
-			return new Record(node);
-		}
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -106,5 +94,17 @@ public class Record {
 	@Override
 	public String toString() {
 		return DomUtil.print(recordNode);
+	}
+
+	public static class Creator {
+		private final Node node;
+
+		public Creator(final Node node) {
+			this.node = node;
+		}
+
+		public Record create() {
+			return new Record(node);
+		}
 	}
 }

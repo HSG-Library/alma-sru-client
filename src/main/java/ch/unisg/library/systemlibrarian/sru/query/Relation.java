@@ -19,14 +19,14 @@ public enum Relation {
 		this.value = value;
 	}
 
-	public String getValue() {
-		return value;
-	}
-
 	public static Optional<Relation> findByOperator(final String op) {
 		return Stream.of(Relation.values())
 				.filter(relation -> relation.value.equals(op))
 				.findFirst();
+	}
+
+	public String getValue() {
+		return value;
 	}
 
 	@Override

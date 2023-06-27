@@ -4,7 +4,7 @@ import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
-import ch.unisg.library.systemlibrarian.sru.response.Record;
+import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
 
 import java.io.File;
@@ -18,6 +18,13 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 	private File input;
 	private File output;
 	private String column;
+
+	public static void main(String[] args) {
+		SruExcelInputOutputScript findRootRecords = new FindRootRecords()
+				.input("/Users/jonas/OneDrive - Universität St.Gallen/transfer/IFF-SLSP-Script-output.xlsx", "A")
+				.output("/Users/jonas/OneDrive - Universität St.Gallen/transfer/IFF-oberaufnahmen.xlsx");
+		findRootRecords.processFiles();
+	}
 
 	@Override
 	public SruExcelInputOutputScript input(final String path, final String column) {
@@ -66,17 +73,17 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 	}
 
 	private Stream<String> getOtherSystemNumbers(String mmsIdNz) {
-		Optional<Record> result = getRecord(mmsIdNz);
+		Optional<MarcRecord> result = getRecord(mmsIdNz);
 		if (result.isEmpty()) {
 			return Stream.empty();
 		}
-		Record firstRecord = result.get();
+		MarcRecord firstMarcRecord = result.get();
 
-		List<Subfield> fields773 = firstRecord.findSubfield("773", "w");
-		List<Subfield> fields800 = firstRecord.findSubfield("800", "w");
-		List<Subfield> fields810 = firstRecord.findSubfield("810", "w");
-		List<Subfield> fields811 = firstRecord.findSubfield("811", "w");
-		List<Subfield> fields830 = firstRecord.findSubfield("830", "w");
+		List<Subfield> fields773 = firstMarcRecord.findSubfield("773", "w");
+		List<Subfield> fields800 = firstMarcRecord.findSubfield("800", "w");
+		List<Subfield> fields810 = firstMarcRecord.findSubfield("810", "w");
+		List<Subfield> fields811 = firstMarcRecord.findSubfield("811", "w");
+		List<Subfield> fields830 = firstMarcRecord.findSubfield("830", "w");
 
 		return Stream.of(fields773.stream(),
 						fields800.stream(),
@@ -107,7 +114,7 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(BASE)
 				.query(new SruQuery(query));
 		SruClient sru = new SruClient();
-		Stream<Record> records = sru.getAllRecords(urlBuilder);
+		Stream<MarcRecord> records = sru.getAllRecords(urlBuilder);
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

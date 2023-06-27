@@ -4,7 +4,7 @@ import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
-import ch.unisg.library.systemlibrarian.sru.response.Record;
+import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
 
 import java.io.File;
@@ -21,6 +21,13 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 	private File input;
 	private File output;
 	private String column;
+
+	public static void main(String[] args) {
+		SruExcelInputOutputScript findRelatedRecords = new FindRelatedRecords()
+				.input("/Users/jonas/OneDrive - Universität St.Gallen/transfer/IFF-SLSP-Script-output.xlsx", "A")
+				.output("/Users/jonas/OneDrive - Universität St.Gallen/transfer/IFF-verknuepfte.xlsx");
+		findRelatedRecords.processFiles();
+	}
 
 	@Override
 	public SruExcelInputOutputScript input(final String path, final String column) {
@@ -70,12 +77,12 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 	}
 
 	private Stream<String> get35a(String mmsIdNz) {
-		Optional<Record> result = getRecord(mmsIdNz);
+		Optional<MarcRecord> result = getRecord(mmsIdNz);
 		if (result.isEmpty()) {
 			return Stream.empty();
 		}
-		Record firstRecord = result.get();
-		List<Subfield> fields35a = firstRecord.findSubfield("035", "a");
+		MarcRecord firstMarcRecord = result.get();
+		List<Subfield> fields35a = firstMarcRecord.findSubfield("035", "a");
 		return fields35a.stream()
 				.map(Subfield::getText);
 	}
@@ -87,7 +94,7 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
 				.query(new SruQuery(query));
 		SruClient sru = new SruClient();
-		Stream<Record> records = sru.getAllRecords(urlBuilder);
+		Stream<MarcRecord> records = sru.getAllRecords(urlBuilder);
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

@@ -97,7 +97,7 @@ public class MarcRecord {
 
 	@Override
 	public String toString() {
-		return DomUtil.print(recordNode);
+		return new XmlHelper().nodeToString(recordNode);
 	}
 
 	public static class Creator {

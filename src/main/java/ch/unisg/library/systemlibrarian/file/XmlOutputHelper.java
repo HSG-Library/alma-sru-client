@@ -45,7 +45,9 @@ public class XmlOutputHelper {
 	private void writeString(final Path outputFilePath, final String outputString) {
 		try {
 			LOG.info("Write file '{}'", outputFilePath);
-			Files.createDirectories(outputFilePath.getParent());
+			if (!Files.exists(outputFilePath.getParent())) {
+				Files.createDirectories(outputFilePath.getParent());
+			}
 			Files.writeString(outputFilePath, outputString, StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			LOG.error("Could not write output file '{}', skipping.", outputFilePath, e);

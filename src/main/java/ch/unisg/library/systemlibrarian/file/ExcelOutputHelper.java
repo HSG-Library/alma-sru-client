@@ -19,7 +19,7 @@ public class ExcelOutputHelper {
 	}
 
 	public File writeToExcel(final List<List<String>> rows) {
-		try (FileOutputStream os = new FileOutputStream(outputFile); Workbook wb = new Workbook(os, "SRU", "0.1");) {
+		try (FileOutputStream os = new FileOutputStream(outputFile); Workbook wb = new Workbook(os, "SRU", "0.1")) {
 			final Worksheet worksheet = wb.newWorksheet("Sheet 1");
 			for (int rowIndex = 0; rowIndex < rows.size(); rowIndex++) {
 				List<String> row = rows.get(rowIndex);
@@ -35,7 +35,7 @@ public class ExcelOutputHelper {
 	}
 
 	public File writeToExcel(final Map<String, List<String>> rowsWithLeadColumn) {
-		try (FileOutputStream os = new FileOutputStream(outputFile); Workbook wb = new Workbook(os, "SRU", "0.1");) {
+		try (FileOutputStream os = new FileOutputStream(outputFile); Workbook wb = new Workbook(os, "SRU", "0.1")) {
 			final Worksheet worksheet = wb.newWorksheet("Sheet 1");
 			final var entries = rowsWithLeadColumn.entrySet().stream().collect(Collectors.toList());
 			for (int rowIndex = 0; rowIndex < entries.size(); rowIndex++) {

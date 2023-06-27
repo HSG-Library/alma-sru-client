@@ -2,7 +2,7 @@ package ch.unisg.library.systemlibrarian.sru;
 
 import ch.unisg.library.systemlibrarian.helper.DomUtil;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
-import ch.unisg.library.systemlibrarian.sru.response.Record;
+import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -23,7 +23,7 @@ class SruClientTest {
 	void getRecordsFromResponseCountTest() throws IOException {
 		final String mockResponse = getResponseFromFile("records-12.xml");
 		SruClient sruClient = new SruClient();
-		Stream<Record> recordStream = sruClient.extractRecords(DomUtil.getDocumentFromXmlString(mockResponse));
+		Stream<MarcRecord> recordStream = sruClient.extractRecords(DomUtil.getDocumentFromXmlString(mockResponse));
 		assertEquals(12, recordStream.count());
 	}
 
@@ -31,8 +31,8 @@ class SruClientTest {
 	void getRecordsFromResponseTest() throws IOException {
 		final String mockResponse = getResponseFromFile("records-12.xml");
 		SruClient sruClient = new SruClient();
-		Stream<Record> recordStream = sruClient.extractRecords(DomUtil.getDocumentFromXmlString(mockResponse));
-		Optional<Record> record5 = recordStream.skip(4).findFirst();
+		Stream<MarcRecord> recordStream = sruClient.extractRecords(DomUtil.getDocumentFromXmlString(mockResponse));
+		Optional<MarcRecord> record5 = recordStream.skip(4).findFirst();
 		assertTrue(record5.isPresent());
 		Optional<Controlfield> controlfield001 = record5.get().getControlfield("001");
 		assertTrue(controlfield001.isPresent());

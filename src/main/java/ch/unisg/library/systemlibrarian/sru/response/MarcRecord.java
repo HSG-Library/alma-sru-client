@@ -1,6 +1,6 @@
 package ch.unisg.library.systemlibrarian.sru.response;
 
-import ch.unisg.library.systemlibrarian.helper.DomUtil;
+import ch.unisg.library.systemlibrarian.helper.XmlHelper;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -11,10 +11,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Record {
+public class MarcRecord {
 	private final Node recordNode;
 
-	Record(final Node recordNode) {
+	MarcRecord(final Node recordNode) {
 		this.recordNode = recordNode;
 	}
 
@@ -34,6 +34,10 @@ public class Record {
 		final String query = "./datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
 		NodeList subfields = xPathQuery(recordNode, query);
 		return transformToSubfields(subfields);
+	}
+
+	public Node getRecordNode() {
+		return recordNode;
 	}
 
 	private NodeList xPathQuery(final Node node, final String xPathQuery) {
@@ -81,9 +85,9 @@ public class Record {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 
-		Record record = (Record) o;
+		MarcRecord marcRecord = (MarcRecord) o;
 
-		return Objects.equals(recordNode, record.recordNode);
+		return Objects.equals(recordNode, marcRecord.recordNode);
 	}
 
 	@Override
@@ -103,8 +107,8 @@ public class Record {
 			this.node = node;
 		}
 
-		public Record create() {
-			return new Record(node);
+		public MarcRecord create() {
+			return new MarcRecord(node);
 		}
 	}
 }

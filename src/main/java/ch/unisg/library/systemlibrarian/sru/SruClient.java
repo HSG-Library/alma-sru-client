@@ -2,7 +2,7 @@ package ch.unisg.library.systemlibrarian.sru;
 
 import ch.unisg.library.systemlibrarian.helper.HttpXmlClientHelper;
 import ch.unisg.library.systemlibrarian.helper.XPathHelper;
-import ch.unisg.library.systemlibrarian.sru.response.Record;
+import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 
 public class SruClient {
 
-	public Optional<Record> getSingleRecord(SruUrlBuilder urlBuilder) {
+	public Optional<MarcRecord> getSingleRecord(SruUrlBuilder urlBuilder) {
 		urlBuilder.maximumRecords(1L);
 		return call(urlBuilder)
 				.map(this::extractRecords)
@@ -23,7 +23,7 @@ public class SruClient {
 				.findFirst();
 	}
 
-	public Stream<Record> getAllRecords(SruUrlBuilder urlBuilder) {
+	public Stream<MarcRecord> getAllRecords(SruUrlBuilder urlBuilder) {
 		long pageSize = 50L;
 		return LongStream.iterate(0L, i -> i + pageSize)  // Creates an infinite Stream with elements 0, 4, 8, 12, ...
 				.mapToObj(offset -> call(urlBuilder, offset, pageSize))
@@ -32,12 +32,12 @@ public class SruClient {
 				.flatMap(this::extractRecords);
 	}
 
-	public Stream<Record> extractRecords(final Document sruDocument) {
+	public Stream<MarcRecord> extractRecords(final Document sruDocument) {
 		NodeList nodeList = new XPathHelper().query(sruDocument, "//recordData/*");
 		return IntStream.range(0, nodeList.getLength())
 				.mapToObj(nodeList::item)
-				.map(Record.Creator::new)
-				.map(Record.Creator::create);
+				.map(MarcRecord.Creator::new)
+				.map(MarcRecord.Creator::create);
 	}
 
 	private Optional<Document> call(SruUrlBuilder urlBuilder) {

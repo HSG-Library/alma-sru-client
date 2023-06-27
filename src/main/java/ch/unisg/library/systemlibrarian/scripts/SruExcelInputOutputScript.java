@@ -5,7 +5,7 @@ import ch.unisg.library.systemlibrarian.file.ExcelOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
-import ch.unisg.library.systemlibrarian.sru.response.Record;
+import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 
 import java.io.File;
 import java.util.List;
@@ -28,7 +28,7 @@ public interface SruExcelInputOutputScript {
 
 	void processFiles();
 
-	default Optional<Record> getRecord(final String mmsId) {
+	default Optional<MarcRecord> getRecord(final String mmsId) {
 		final String query = "mms_id=" + mmsId;
 		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
 				.query(new SruQuery(query));

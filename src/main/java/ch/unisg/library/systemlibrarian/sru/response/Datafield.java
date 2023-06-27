@@ -4,6 +4,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -63,5 +64,37 @@ public class Datafield {
 					.collect(Collectors.toList());
 			return new Datafield(tag, ind1, ind2, subfields);
 		}
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Datafield datafield = (Datafield) o;
+
+		if (!Objects.equals(tag, datafield.tag)) return false;
+		if (!Objects.equals(ind1, datafield.ind1)) return false;
+		if (!Objects.equals(ind2, datafield.ind2)) return false;
+		return Objects.equals(subfields, datafield.subfields);
+	}
+
+	@Override
+	public int hashCode() {
+		int result = tag != null ? tag.hashCode() : 0;
+		result = 31 * result + (ind1 != null ? ind1.hashCode() : 0);
+		result = 31 * result + (ind2 != null ? ind2.hashCode() : 0);
+		result = 31 * result + (subfields != null ? subfields.hashCode() : 0);
+		return result;
+	}
+
+	@Override
+	public String toString() {
+		return "Datafield{" +
+				"tag='" + tag + '\'' +
+				", ind1='" + ind1 + '\'' +
+				", ind2='" + ind2 + '\'' +
+				", subfields=" + subfields +
+				'}';
 	}
 }

@@ -1,10 +1,12 @@
 package ch.unisg.library.systemlibrarian.sru.response;
 
+import ch.unisg.library.systemlibrarian.helper.DomUtil;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import javax.xml.xpath.*;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -84,5 +86,25 @@ public class Record {
 		public Record create() {
 			return new Record(node);
 		}
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Record record = (Record) o;
+
+		return Objects.equals(recordNode, record.recordNode);
+	}
+
+	@Override
+	public int hashCode() {
+		return recordNode != null ? recordNode.hashCode() : 0;
+	}
+
+	@Override
+	public String toString() {
+		return DomUtil.print(recordNode);
 	}
 }

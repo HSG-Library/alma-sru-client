@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ExcelOutputDataHelper {
+public class ExcelOutputHelper {
 
 	private final File outputFile;
 
-	public ExcelOutputDataHelper(final File outputFile) {
+	public ExcelOutputHelper(final File outputFile) {
 		this.outputFile = outputFile;
 	}
 

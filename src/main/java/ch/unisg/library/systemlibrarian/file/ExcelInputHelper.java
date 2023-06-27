@@ -13,11 +13,11 @@ import java.lang.invoke.MethodHandles;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class ExcelInputDataHelper {
+public class ExcelInputHelper {
 	private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 	private final File xlsxFile;
 
-	public ExcelInputDataHelper(final File xlsxFile) {
+	public ExcelInputHelper(final File xlsxFile) {
 		this.xlsxFile = xlsxFile;
 	}
 

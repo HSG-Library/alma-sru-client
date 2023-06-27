@@ -10,7 +10,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class ExcelOutputDataHelperTest {
+class ExcelOutputHelperTest {
 
 	@Test
 	public void testWriteExcelRows() throws IOException {
@@ -22,15 +22,15 @@ class ExcelOutputDataHelperTest {
 				List.of("1", "2", "3", "4")
 		);
 
-		ExcelOutputDataHelper excelOutputDataHelper = new ExcelOutputDataHelper(File.createTempFile("sru-test-", ".xlsx"));
-		final File xlsxFile = excelOutputDataHelper.writeToExcel(rows);
+		ExcelOutputHelper excelOutputHelper = new ExcelOutputHelper(File.createTempFile("sru-test-", ".xlsx"));
+		final File xlsxFile = excelOutputHelper.writeToExcel(rows);
 
-		ExcelInputDataHelper excelInputDataHelper = new ExcelInputDataHelper(xlsxFile);
-		List<String> columnA = excelInputDataHelper.loadNumbersColumn("A");
+		ExcelInputHelper excelInputHelper = new ExcelInputHelper(xlsxFile);
+		List<String> columnA = excelInputHelper.loadNumbersColumn("A");
 		assertEquals(5, columnA.size());
 		assertTrue(columnA.stream().allMatch(value -> value.equals("1")));
 
-		List<String> columnD = excelInputDataHelper.loadNumbersColumn("D");
+		List<String> columnD = excelInputHelper.loadNumbersColumn("D");
 		assertEquals(5, columnD.size());
 		assertTrue(columnD.stream().allMatch(value -> value.equals("4")));
 	}
@@ -45,15 +45,15 @@ class ExcelOutputDataHelperTest {
 				"5th", List.of("1", "2", "3", "4")
 		);
 
-		ExcelOutputDataHelper excelOutputDataHelper = new ExcelOutputDataHelper(File.createTempFile("sru-test-", ".xlsx"));
-		final File xlsxFile = excelOutputDataHelper.writeToExcel(rowsWithLead);
+		ExcelOutputHelper excelOutputHelper = new ExcelOutputHelper(File.createTempFile("sru-test-", ".xlsx"));
+		final File xlsxFile = excelOutputHelper.writeToExcel(rowsWithLead);
 
-		ExcelInputDataHelper excelInputDataHelper = new ExcelInputDataHelper(xlsxFile);
-		List<String> columnA = excelInputDataHelper.loadColumn("A");
+		ExcelInputHelper excelInputHelper = new ExcelInputHelper(xlsxFile);
+		List<String> columnA = excelInputHelper.loadColumn("A");
 		assertEquals(5, columnA.size());
 		assertTrue(columnA.containsAll(List.of("1st", "2nd", "3rd", "4th", "5th")));
 
-		List<String> columnD = excelInputDataHelper.loadNumbersColumn("D");
+		List<String> columnD = excelInputHelper.loadNumbersColumn("D");
 		assertEquals(5, columnD.size());
 		assertTrue(columnD.stream().allMatch(value -> value.equals("3")));
 	}

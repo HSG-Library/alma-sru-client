@@ -1,7 +1,7 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
-import ch.unisg.library.systemlibrarian.file.ExcelInputDataHelper;
-import ch.unisg.library.systemlibrarian.file.ExcelOutputDataHelper;
+import ch.unisg.library.systemlibrarian.file.ExcelInputHelper;
+import ch.unisg.library.systemlibrarian.file.ExcelOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.SruClient;
 import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
@@ -37,14 +37,14 @@ public interface SruExcelInputOutputScript {
 	}
 
 	default List<String> getMmsIdsFromExcel(final String column) {
-		return new ExcelInputDataHelper(getInput()).loadNumbersColumn(column);
+		return new ExcelInputHelper(getInput()).loadNumbersColumn(column);
 	}
 
 	default void writeToExcel(List<List<String>> rows) {
-		new ExcelOutputDataHelper(getOutput()).writeToExcel(rows);
+		new ExcelOutputHelper(getOutput()).writeToExcel(rows);
 	}
 
 	default void writeToExcel(Map<String, List<String>> rows) {
-		new ExcelOutputDataHelper(getOutput()).writeToExcel(rows);
+		new ExcelOutputHelper(getOutput()).writeToExcel(rows);
 	}
 }

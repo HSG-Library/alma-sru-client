@@ -143,7 +143,7 @@ class SruClientTest {
 	}
 
 	@Test
-	void stopOnHttpError() throws IOException {
+	void stopOnHttpError() {
 		mockServer.when(
 						HttpRequest.request()
 								.withMethod("GET")

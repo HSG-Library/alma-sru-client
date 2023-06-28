@@ -35,7 +35,7 @@ public class XmlOutputHelper {
 			final String fileName = mmsId
 					.map(Controlfield::getText)
 					.map(id -> String.join(getDatePrefix(), id + ".xml"))
-					.orElseGet(() -> String.join(getDatePrefix(), RandomStringUtils.random(10), "-") + ".xml");
+					.orElseGet(() -> String.join(getDatePrefix(), RandomStringUtils.randomAlphabetic(10), "-") + ".xml");
 			final String recordXml = record.toString();
 			final File outputFile = new File(outputDirectory.toString(), fileName);
 			writeString(outputFile.toPath(), recordXml);

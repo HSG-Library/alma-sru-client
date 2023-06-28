@@ -13,6 +13,12 @@ import java.util.stream.Stream;
 
 public class SruClient {
 
+	/**
+	 * Returns the first or only record of the query result.
+	 *
+	 * @param sruUrl SruUrl with query
+	 * @return Optional record, depending on the query, the only result or the first of the result
+	 */
 	public Optional<MarcRecord> getSingleRecord(final SruUrl sruUrl) {
 		return call(sruUrl.withMaximumRecords(1))
 				.map(this::extractRecords)
@@ -20,12 +26,32 @@ public class SruClient {
 				.findFirst();
 	}
 
+	/**
+	 * Returns the results of the query, according to startRecord and maximumRecords
+	 * configured in the SruUrl
+	 *
+	 * @param sruUrl SruUrl with query
+	 * @return The resulting records between startRecord and maximumRecords
+	 */
+	public Stream<MarcRecord> getRecords(final SruUrl sruUrl) {
+		int pageSize = 50;
+		return call(sruUrl)
+				.map(this::extractRecords)
+				.orElse(Stream.empty());
+	}
+
+	/**
+	 * Returns the complete result set of the query, ignoring the maximumRecords parameter
+	 *
+	 * @param sruUrl SruUrl with query
+	 * @return All resulting records without paging
+	 */
 	public Stream<MarcRecord> getAllRecords(final SruUrl sruUrl) {
 		int pageSize = 50;
-		return IntStream.iterate(0, i -> i + pageSize)  // Creates an infinite Stream with elements 0, 4, 8, 12, ...
+		return IntStream.iterate(1, i -> i + pageSize)  // Creates an infinite Stream with elements 0, 50, 100, 150, ...
 				.mapToObj(offset -> call(sruUrl, offset, pageSize))
+				.takeWhile(Optional::isPresent)
 				.flatMap(Optional::stream)
-				.takeWhile(this::hasRecords)
 				.flatMap(this::extractRecords);
 	}
 
@@ -49,10 +75,5 @@ public class SruClient {
 			return new HttpXmlClientHelper().call(sruUrlWithOffset.getUrl());
 		}
 		return new HttpXmlClientHelper().call(sruUrl.getUrl());
-	}
-
-	private boolean hasRecords(final Document document) {
-		final NodeList nodeList = new XPathHelper().query(document, "//recordData/*");
-		return nodeList.getLength() > 0;
 	}
 }

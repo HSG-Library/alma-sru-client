@@ -1,11 +1,12 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
 import ch.unisg.library.systemlibrarian.sru.SruClient;
-import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
 
 import java.io.File;
 import java.util.*;
@@ -111,10 +112,11 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 		// always search in 035$$a
 		queryParts.add("other_system_number_active_035==" + id);
 		final String query = String.join(" OR ", queryParts);
-		final SruUrlBuilder urlBuilder = new SruUrlBuilder(BASE)
-				.query(new SruQuery(query));
+		final SruUrl sruUrl = SruUrlBuilder.create(BASE)
+				.query(new SruQuery(query))
+				.build();
 		SruClient sru = new SruClient();
-		Stream<MarcRecord> records = sru.getAllRecords(urlBuilder);
+		Stream<MarcRecord> records = sru.getAllRecords(sruUrl);
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

@@ -3,9 +3,10 @@ package ch.unisg.library.systemlibrarian.scripts;
 import ch.unisg.library.systemlibrarian.file.ExcelInputHelper;
 import ch.unisg.library.systemlibrarian.file.ExcelOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.SruClient;
-import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
 
 import java.io.File;
 import java.util.List;
@@ -30,10 +31,11 @@ public interface SruExcelInputOutputScript {
 
 	default Optional<MarcRecord> getRecord(final String mmsId) {
 		final String query = "mms_id=" + mmsId;
-		final SruUrlBuilder urlBuilder = new SruUrlBuilder(getBaseUrl())
-				.query(new SruQuery(query));
+		final SruUrl sruUrl = SruUrlBuilder.create(getBaseUrl())
+				.query(new SruQuery(query))
+				.build();
 		SruClient sru = new SruClient();
-		return sru.getSingleRecord(urlBuilder);
+		return sru.getSingleRecord(sruUrl);
 	}
 
 	default List<String> getMmsIdsFromExcel(final String column) {

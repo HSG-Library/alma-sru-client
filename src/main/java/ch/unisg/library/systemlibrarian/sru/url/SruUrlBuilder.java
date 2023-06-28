@@ -1,27 +1,24 @@
-package ch.unisg.library.systemlibrarian.sru;
+package ch.unisg.library.systemlibrarian.sru.url;
 
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class SruUrlBuilder {
-	private static final String VERSION = "version";
-	private static final String OPERATION = "operation";
-	private static final String QUERY = "query";
-	private static final String START_RECORD = "startRecord";
-	private static final String MAXIMUM_RECORDS = "maximumRecords";
-	private static final String RECORD_SCHEMA = "recordSchema";
 	private final String base;
 	private Version version = Version.v1_2;
 	private Operation operation = Operation.SEARCH_RETRIEVE;
-	private long startRecord = 1;
-	private long maximumRecords = 50;
+	private int startRecord = 1;
+	private int maximumRecords = 50;
 	private RecordSchema recordSchema = RecordSchema.MARCXML;
 	private String query;
 
-	public SruUrlBuilder(final String baseUrl) {
+	private SruUrlBuilder(final String baseUrl) {
 		this.base = baseUrl;
+	}
+
+	public static SruUrlBuilder create(final String baseUrl) {
+		return new SruUrlBuilder(baseUrl);
 	}
 
 	public SruUrlBuilder version(final Version version) {
@@ -34,12 +31,12 @@ public class SruUrlBuilder {
 		return this;
 	}
 
-	public SruUrlBuilder startRecord(final long startRecord) {
+	public SruUrlBuilder startRecord(final int startRecord) {
 		this.startRecord = startRecord;
 		return this;
 	}
 
-	public SruUrlBuilder maximumRecords(final long maximumRecords) {
+	public SruUrlBuilder maximumRecords(final int maximumRecords) {
 		this.maximumRecords = maximumRecords;
 		return this;
 	}
@@ -54,22 +51,16 @@ public class SruUrlBuilder {
 		return this;
 	}
 
-	public String build() {
+	public SruUrl build() {
 		final Map<String, String> parameters = Map.of(
-				VERSION, this.version.getValue(),
-				OPERATION, this.operation.getValue(),
-				START_RECORD, String.valueOf(this.startRecord),
-				MAXIMUM_RECORDS, String.valueOf(this.maximumRecords),
-				RECORD_SCHEMA, this.recordSchema.getValue(),
-				QUERY, this.query
+				SruUrl.VERSION, this.version.getValue(),
+				SruUrl.OPERATION, this.operation.getValue(),
+				SruUrl.START_RECORD, String.valueOf(this.startRecord),
+				SruUrl.MAXIMUM_RECORDS, String.valueOf(this.maximumRecords),
+				SruUrl.RECORD_SCHEMA, this.recordSchema.getValue(),
+				SruUrl.QUERY, this.query
 		);
-		return this.base + "?" + joinParameters(parameters);
-	}
-
-	private String joinParameters(Map<String, String> parameters) {
-		return parameters.entrySet().stream()
-				.map(entry -> entry.getKey() + "=" + entry.getValue())
-				.collect(Collectors.joining("&"));
+		return new SruUrl(this.base, parameters);
 	}
 
 	public enum Version {

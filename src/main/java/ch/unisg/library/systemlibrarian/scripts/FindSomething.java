@@ -2,11 +2,12 @@ package ch.unisg.library.systemlibrarian.scripts;
 
 import ch.unisg.library.systemlibrarian.file.XmlOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.SruClient;
-import ch.unisg.library.systemlibrarian.sru.SruUrlBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.index.Idx;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
+import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -20,16 +21,17 @@ public class FindSomething {
 	}
 
 	public void run() {
-		SruQuery sruQuery = SruQueryBuilder.create(Idx.title().containsPhrase("zombie"))
+		final SruQuery sruQuery = SruQueryBuilder.create(Idx.title().containsPhrase("zombie"))
 				.and(Idx.mmsMaterialType().equalTo("BK"))
 				.build();
 
-		SruUrlBuilder sruUrlBuilder = new SruUrlBuilder(BASE)
-				.query(sruQuery);
+		final SruUrl sruUrl = SruUrlBuilder.create(BASE)
+				.query(sruQuery)
+				.build();
 
 		SruClient sruClient = new SruClient();
-		Stream<MarcRecord> allRecordsForSingleFile = sruClient.getAllRecords(sruUrlBuilder);
-		Stream<MarcRecord> allRecordsForIndividualFiles = sruClient.getAllRecords(sruUrlBuilder);
+		Stream<MarcRecord> allRecordsForSingleFile = sruClient.getAllRecords(sruUrl);
+		Stream<MarcRecord> allRecordsForIndividualFiles = sruClient.getAllRecords(sruUrl);
 
 		//allRecords.forEach(System.out::println);
 

@@ -1,6 +1,5 @@
 package ch.unisg.library.systemlibrarian.sru;
 
-import ch.unisg.library.systemlibrarian.helper.HttpXmlClientHelper;
 import ch.unisg.library.systemlibrarian.helper.XPathHelper;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
@@ -12,6 +11,10 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class SruClient {
+
+	public Optional<Document> getXmlResponse(final SruUrl sruUrl) {
+		return call(sruUrl);
+	}
 
 	/**
 	 * Returns the first or only record of the query result.
@@ -34,7 +37,6 @@ public class SruClient {
 	 * @return The resulting records between startRecord and maximumRecords
 	 */
 	public Stream<MarcRecord> getRecords(final SruUrl sruUrl) {
-		int pageSize = 50;
 		return call(sruUrl)
 				.map(this::extractRecords)
 				.orElse(Stream.empty());
@@ -72,8 +74,8 @@ public class SruClient {
 			final SruUrl sruUrlWithOffset = sruUrl
 					.withStartRecord(offset)
 					.withMaximumRecords(pageSize);
-			return new HttpXmlClientHelper().call(sruUrlWithOffset.getUrl());
+			return new SruHttpClient().call(sruUrlWithOffset.getUrl());
 		}
-		return new HttpXmlClientHelper().call(sruUrl.getUrl());
+		return new SruHttpClient().call(sruUrl.getUrl());
 	}
 }

@@ -1,4 +1,4 @@
-package ch.unisg.library.systemlibrarian.helper;
+package ch.unisg.library.systemlibrarian.sru;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,14 +17,14 @@ import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
-public class HttpXmlClientHelper {
+public class SruHttpClient {
 
 	private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
 	private final HttpClient httpClient;
 	private final DocumentBuilderFactory documentBuilderFactory;
 
-	public HttpXmlClientHelper() {
+	SruHttpClient() {
 		this.httpClient = HttpClient.newHttpClient();
 		this.documentBuilderFactory = DocumentBuilderFactory.newInstance();
 	}

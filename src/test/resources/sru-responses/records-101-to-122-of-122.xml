@@ -1,0 +1,2794 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+	<version>1.2</version>
+	<numberOfRecords>122</numberOfRecords>
+	<records>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02929cam  22027143u 4500</leader>
+					<controlfield tag="001">9911248223205506</controlfield>
+					<controlfield tag="008">220128s2020||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000485865</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)61626</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000485865</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Blavatsky, H. P. (Helena Petrovna)</subfield>
+						<subfield code="d">1831-1891</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret Doctrine, Vol. 4 of 4 The Synthesis of Science, Religion, and Philosophy</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2020-03-15</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379488310005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248223205506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248223205506</recordIdentifier>
+			<recordPosition>101</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03110cam  22028953u 4500</leader>
+					<controlfield tag="001">9911248624605506</controlfield>
+					<controlfield tag="008">220128s2021||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000489510</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)65238</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000489510</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Christie, Agatha</subfield>
+						<subfield code="d">1890-1976</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret of Chimneys</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="508">
+						<subfield code="a">Updated: 2021-09-27</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2021-05-03</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="4" tag="650">
+						<subfield code="a">Battle</subfield>
+						<subfield code="a">Superintendent (Fictitious character)</subfield>
+						<subfield code="a">Fiction</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379600040005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248624605506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248624605506</recordIdentifier>
+			<recordPosition>102</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02933cam  22027183u 4500</leader>
+					<controlfield tag="001">9911248181905506</controlfield>
+					<controlfield tag="008">220128s2019||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000484262</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)60039</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000484262</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">King, William Lyon Mackenzie</subfield>
+						<subfield code="d">1874-1950</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret of Heroism: A Memoir of Henry Albert Harper</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="246">
+						<subfield code="a">Secret of Heroism</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2019-08-01</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="4" tag="650">
+						<subfield code="a">Harper</subfield>
+						<subfield code="a">Henry Albert</subfield>
+						<subfield code="a">1873-1901</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379435920005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248181905506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248181905506</recordIdentifier>
+			<recordPosition>103</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02873cam  22026813u 4500</leader>
+					<controlfield tag="001">9911247865705506</controlfield>
+					<controlfield tag="008">220128s2018||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000481395</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)57668</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000481395</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Fleetwood, Henry</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret of Life, Death and Immortality A startling proposition, with a chapter devoted to mental therapeutics and instructions for self healing</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2018-08-10</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379361080005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911247865705506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911247865705506</recordIdentifier>
+			<recordPosition>104</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03331cam  22029653u 4500</leader>
+					<controlfield tag="001">9911248700005506</controlfield>
+					<controlfield tag="008">220128s2021||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000490769</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)66485</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000490769</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Carter, Nicholas (House name)</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret of Shangore; Or, Nick Carter Among the Spearmen</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2021-10-07</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379622660005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248700005506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248700005506</recordIdentifier>
+			<recordPosition>105</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03058cam  22028663u 4500</leader>
+					<controlfield tag="001">9911247870905506</controlfield>
+					<controlfield tag="008">220128s2018||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000481343</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)57616</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000481343</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Speight, T. W. (Thomas Wilkinson)</subfield>
+						<subfield code="d">1830-1915</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret of Wyvern Towers</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2018-07-31</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379342640005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911247870905506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911247870905506</recordIdentifier>
+			<recordPosition>106</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03013cam  22027753u 4500</leader>
+					<controlfield tag="001">9911248624705506</controlfield>
+					<controlfield tag="008">220128s2021||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000489509</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)65237</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000489509</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Barbour, Ralph Henry</subfield>
+						<subfield code="d">1870-1944</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret Play</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="440">
+						<subfield code="a">The Purple Pennant Series</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2021-05-02</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="700">
+						<subfield code="a">Rockwell, Norman</subfield>
+						<subfield code="d">1894-1978</subfield>
+						<subfield code="e">Illustrator</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379600070005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248624705506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248624705506</recordIdentifier>
+			<recordPosition>107</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03247cam  22030323u 4500</leader>
+					<controlfield tag="001">9911247925505506</controlfield>
+					<controlfield tag="008">220128s2019||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000482811</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)59072</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000482811</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Leblanc, Maurice</subfield>
+						<subfield code="d">1864-1941</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret Tomb</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2019-03-16</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="700">
+						<subfield code="a">Gage, George W.</subfield>
+						<subfield code="d">1887-1957</subfield>
+						<subfield code="e">Illustrator</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379399020005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911247925505506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911247925505506</recordIdentifier>
+			<recordPosition>108</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02787cam  22025723u 4500</leader>
+					<controlfield tag="001">9911248171205506</controlfield>
+					<controlfield tag="008">220128s2019||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000484370</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)60146</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000484370</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Gale, Zona</subfield>
+						<subfield code="d">1874-1938</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Secret Way</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2019-08-21</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379432710005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248171205506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248171205506</recordIdentifier>
+			<recordPosition>109</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03957cam  22037653u 4500</leader>
+					<controlfield tag="001">9911247797405506</controlfield>
+					<controlfield tag="008">220128s2018||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000480065</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)56345</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000480065</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Barton, George</subfield>
+						<subfield code="d">1866-1940</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The World's Greatest Military Spies and Secret Service Agents</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="505">
+						<subfield code="a">The Alsatian smuggler who helped Napoleon to capture the Austrian army -- Belle Boyd, the Confederate girl who saved Stonewall Jackson -- The Indian scout who was the hero of King Philip's war -- How the suicide of a staff officer once averted war betwen Austria and Russia -- The romantic side of Major André's unsuccessful exploit -- The strange adventures of the Chevalier D'Eon at the Russian court -- How Napoleon's chief spy hoodwinked the Emperor of Austria -- Lydia Darrah, the brave Quakeress who saved Washington's army from destruction -- Doctor Steiber and the mystery of the Franco-Prussian War -- The adventure of Private Morgan in the camp of Cornwallis -- The mysterious and romantic case of General Napper Tandy -- How Monsieur de Meinau helped to make Jerome Bonaparte king of Westphalia -- The strange mystery surrounding the betrayal of Captain Nathan Hale -- Major Le Caron and the Fenian invasion of Canada -- How Emma Edmonds penetrated the Confederate lines -- The amazing adventure of Brigadier-General Lafayette C. Baker -- The mysterious "F" and the captured troopers -- The mysterious man who asked for a light -- Carl Lody and spies of the world's greatest war.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2018-01-09</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379320590005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911247797405506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911247797405506</recordIdentifier>
+			<recordPosition>110</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02995cam  22028033u 4500</leader>
+					<controlfield tag="001">9911248459805506</controlfield>
+					<controlfield tag="008">220128s2020||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000487134</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)62885</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000487134</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Theiss, Lewis E. (Lewis Edwin)</subfield>
+						<subfield code="d">1878-1963</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">The Young Wireless Operator—With the U. S. Secret Service Winning his way in the Secret Service</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2020-08-08</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="700">
+						<subfield code="a">Merrill, Frank T.</subfield>
+						<subfield code="d">1848-1923</subfield>
+						<subfield code="e">Illustrator</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379530600005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248459805506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248459805506</recordIdentifier>
+			<recordPosition>111</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03246nam a22006375i 4500</leader>
+					<controlfield tag="001">9911016507305506</controlfield>
+					<controlfield tag="005">20220919011530.0</controlfield>
+					<controlfield tag="006">m|||||o||d||||||||</controlfield>
+					<controlfield tag="007">cr#cnu||||||||</controlfield>
+					<controlfield tag="008">200623t20202020mau    fo  d z000 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">0-674-24531-8</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">0-674-24536-9</subfield>
+					</datafield>
+					<datafield ind1="7" ind2=" " tag="024">
+						<subfield code="a">10.4159/9780674245365</subfield>
+						<subfield code="2">doi</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4100000011242372</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC6190717</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(DE-B1597)549783</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(DE-B1597)9780674245365</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1153802942</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000011242372</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">DE-B1597</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">DE-B1597</subfield>
+						<subfield code="e">rda</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="044">
+						<subfield code="a">mau</subfield>
+						<subfield code="c">US-MA</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">BH201</subfield>
+						<subfield code="b">.N49 2020</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">PHI001000</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">111/.85</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Ngai, Sianne,</subfield>
+						<subfield code="e">author.</subfield>
+						<subfield code="4">aut</subfield>
+						<subfield code="4">http://id.loc.gov/vocabulary/relators/aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Theory of the Gimmick :</subfield>
+						<subfield code="b">Aesthetic Judgment and Capitalist Form /</subfield>
+						<subfield code="c">Sianne Ngai.</subfield>
+					</datafield>
+					<datafield ind1="3" ind2="0" tag="246">
+						<subfield code="a">Aesthetic Judgment and Capitalist Form</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Cambridge, MA :</subfield>
+						<subfield code="b">Harvard University Press,</subfield>
+						<subfield code="c">[2020]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="264">
+						<subfield code="c">©2020</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource (417 pages) :</subfield>
+						<subfield code="b">illustrations</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="588">
+						<subfield code="a">Description based on online resource; title from PDF title page (publisher's Web site, viewed 23. Jun 2020)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">Acclaimed critic Sianne Ngai theorizes the gimmick as an aesthetic category reflecting the fundamental laws of capitalism. Gimmicks make promises of saving labor and increasing value that we distrust but also find attractive. Exploring the use of this form, Ngai shows how its aesthetic dissatisfactions reflect deeper anxieties about capitalism.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="546">
+						<subfield code="a">In English.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="505">
+						<subfield code="t">Frontmatter --</subfield>
+						<subfield code="t">Contents --</subfield>
+						<subfield code="t">Introduction --</subfield>
+						<subfield code="t">Chapter One. Theory of the Gimmick --</subfield>
+						<subfield code="t">Chapter Two. Transparency and Magic in the Gimmick as Technique --</subfield>
+						<subfield code="t">Chapter Three. Readymade Ideas --</subfield>
+						<subfield code="t">Chapter Four. It Follows, or Financial Imps --</subfield>
+						<subfield code="t">Chapter Five. Visceral Abstractions --</subfield>
+						<subfield code="t">Chapter Six. Rødland’s Gimmick --</subfield>
+						<subfield code="t">Chapter Seven. The Color of Value: Stan Douglas’s Suspiria --</subfield>
+						<subfield code="t">Chapter Eight. Henry James’s “Same Secret Principle” --</subfield>
+						<subfield code="t">Notes --</subfield>
+						<subfield code="t">Acknowledgments --</subfield>
+						<subfield code="t">Index</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Aesthetics, Modern</subfield>
+						<subfield code="y">21st century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Aesthetics, Modern</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Aesthetics, Modern</subfield>
+						<subfield code="x">Philosophy.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Influence (Literary, artistic, etc.)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Hoaxes.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Capitalism.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">PHILOSOPHY / Aesthetics</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Aesthetics, Modern</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst00798800</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Capitalism</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst00846425</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Hoaxes</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst01750258</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Influence (Literary, artistic, etc.)</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst00972484</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Literary theory.</subfield>
+						<subfield code="2">thema</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Philosophy: aesthetics.</subfield>
+						<subfield code="2">thema</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Popular philosophy.</subfield>
+						<subfield code="2">thema</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Literature.</subfield>
+						<subfield code="2">ukslc</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="8" tag="776">
+						<subfield code="i">Print version:</subfield>
+						<subfield code="a">Ngai, Sianne</subfield>
+						<subfield code="t">Theory of the gimmick</subfield>
+						<subfield code="d">Cambridge, Massachusetts : The Belknap Press of Harvard University Press, 2020</subfield>
+						<subfield code="z">9780674984547</subfield>
+						<subfield code="w">(DLC)  2019038757</subfield>
+						<subfield code="w">(OCoLC)1111393809</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5364942440005506</subfield>
+						<subfield code="c">6164319640005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Ebook Central Perpetual, DDA and Subscription Titles</subfield>
+						<subfield code="t">Ebook Central</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911016507305506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911016507305506</recordIdentifier>
+			<recordPosition>112</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>01979nam a2200421 c 4500</leader>
+					<controlfield tag="001">9911324859805506</controlfield>
+					<controlfield tag="005">20230407192704.0</controlfield>
+					<controlfield tag="008">210812t20212021xxua|||  b||| 00||| eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">9780062887672</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLNZ-41SLSP_NETWORK)991170728026605501</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">DE-604</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="d">CH-ZuSLS BCUFR</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">330</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="6">880-01</subfield>
+						<subfield code="a">Garten, Jeffrey E</subfield>
+						<subfield code="0">(IDREF)032277873</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="880">
+						<subfield code="6">100-01/(B</subfield>
+						<subfield code="a">Garten, Jeffrey E.</subfield>
+						<subfield code="d">1946-</subfield>
+						<subfield code="4">aut</subfield>
+						<subfield code="0">(DE-588)170699986</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Three days at Camp David</subfield>
+						<subfield code="b">how a secret meeting in 1971 transformed the global economy</subfield>
+						<subfield code="c">Jeffrey E. Garten</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="3" tag="246">
+						<subfield code="a">3 days at Camp David</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">New York, NY</subfield>
+						<subfield code="b">Harper, an imprint of Harper Collins Publishers</subfield>
+						<subfield code="c">[2021]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="264">
+						<subfield code="c">© 2021</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">435 Seiten</subfield>
+						<subfield code="b">Illustrationen</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1="3" ind2=" " tag="520">
+						<subfield code="a">"The former dean of the Yale School of Management and Undersecretary of Commerce in the Clinton administration chronicles the 1971 August meeting at Camp David, where President Nixon unilaterally ended the last vestiges of the gold standard--breaking the link between gold and the dollar--transforming the entire global monetary system"--</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="7" tag="600">
+						<subfield code="a">Nixon, Richard Milhous</subfield>
+						<subfield code="d">1913-1994</subfield>
+						<subfield code="0">(IDREF)027048632</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Système monétaire international</subfield>
+						<subfield code="0">(IDREF)027481425</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Politique monétaire</subfield>
+						<subfield code="0">(IDREF)027728382</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Étalon-or</subfield>
+						<subfield code="0">(IDREF)027819930</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Histoire économique</subfield>
+						<subfield code="0">(IDREF)027616134</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">1971</subfield>
+						<subfield code="2">rero</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">États-Unis</subfield>
+						<subfield code="0">(IDREF)027225488</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Geldpolitik</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4019902-2</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="7" tag="600">
+						<subfield code="a">Nixon, Richard M.</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)14229120X</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">USA</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4078704-7</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Wechselkurs</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4064921-0</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Bretton-Woods-System</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4146589-1</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="648">
+						<subfield code="a">Geschichte 1971</subfield>
+						<subfield code="2">gnd</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="900">
+						<subfield code="a">OK_GND</subfield>
+						<subfield code="x">UZB/UECON/202204/wue</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="903">
+						<subfield code="a">RERO-SIGN</subfield>
+						<subfield code="5">BCUFR/20211115/pvo</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVA">
+						<subfield code="0">9911324859805506</subfield>
+						<subfield code="8">2286786830005506</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="b">HSG</subfield>
+						<subfield code="c">Ground Floor</subfield>
+						<subfield code="d">QM 330 G244</subfield>
+						<subfield code="e">available</subfield>
+						<subfield code="f">1</subfield>
+						<subfield code="g">0</subfield>
+						<subfield code="j">EG</subfield>
+						<subfield code="k">4</subfield>
+						<subfield code="p">1</subfield>
+						<subfield code="q">HSG</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911324859805506</recordIdentifier>
+			<recordPosition>113</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>05168cam a22005058i 4500</leader>
+					<controlfield tag="001">9911332036205506</controlfield>
+					<controlfield tag="005">20211014151059.0</controlfield>
+					<controlfield tag="006">m     o  d</controlfield>
+					<controlfield tag="007">cr#|n|||||||||</controlfield>
+					<controlfield tag="008">210425s2018    ne      o     000 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">90-04-36287-8</subfield>
+						<subfield code="q">(electronic book)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">9789004362871</subfield>
+						<subfield code="q">(electronic book)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="z">90-04-34040-8</subfield>
+						<subfield code="q">(hardback ;</subfield>
+						<subfield code="q">alk. paper)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="z">9789004340404</subfield>
+						<subfield code="q">(hardback ;</subfield>
+						<subfield code="q">alk. paper)</subfield>
+					</datafield>
+					<datafield ind1="7" ind2=" " tag="024">
+						<subfield code="a">10.1163/9789004362871</subfield>
+						<subfield code="2">DOI</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(oapen)https://directory.doabooks.org/handle/20.500.12854/28571</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000002906776</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">NL-LeKB</subfield>
+						<subfield code="c">NL-LeKB</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="b">eng</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">PN4805</subfield>
+						<subfield code="b">.T73 2018</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">HBLH</subfield>
+						<subfield code="2">bicssc</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">HIS037020</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">002.09</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Gøril Brandtzæg, Siv</subfield>
+						<subfield code="4">edt</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="245">
+						<subfield code="a">Travelling chronicles. News and newspapers from the early modern period to the eighteenth century /</subfield>
+						<subfield code="c">Siv Gøril Brandtzæg; Paul Goring; Christine Watson.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="a">Leiden; Boston</subfield>
+						<subfield code="b">Brill</subfield>
+						<subfield code="c">2018</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Leiden :</subfield>
+						<subfield code="b">Koninklijke Brill NV,</subfield>
+						<subfield code="c">2018.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="490">
+						<subfield code="a">Library of the Written Word - The Handpress World ;</subfield>
+						<subfield code="v">66</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="505">
+						<subfield code="t">Front Matter --</subfield>
+						<subfield code="t">Contents /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">Introduction /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">A Network of Networks: Spreading the News in an Expanding World of Information /</subfield>
+						<subfield code="r">Paul Goring --</subfield>
+						<subfield code="t">Exordium /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">Truth and Trust and the Eighteenth-Century Anglophone Newspaper /</subfield>
+						<subfield code="r">William B. Warner --</subfield>
+						<subfield code="t">Archival Limits /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">Searching for Dr. Johnson: The Digitisation of the Burney Newspaper Collection /</subfield>
+						<subfield code="r">Andrew Prescott --</subfield>
+						<subfield code="t">Spreading the News within the Clerical Profession: Newspapers and the Church in the North of England, 1660-1760 /</subfield>
+						<subfield code="r">Daniel Reed --</subfield>
+						<subfield code="t">Manuscript, Print, Word of Mouth /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">All the News that's Fit to Write: The Eighteenth-Century Manuscript Newsletter /</subfield>
+						<subfield code="r">Rachael Scarborough King --</subfield>
+						<subfield code="t">Christoff Koch (1637-1711): Sweden's Man in Moscow /</subfield>
+						<subfield code="r">Heiko Droste and Ingrid Maier --</subfield>
+						<subfield code="t">What the Posol'skii prikaz Really Knew: Intelligencers, Secret Agents and Their Reports /</subfield>
+						<subfield code="r">Daniel C. Waugh --</subfield>
+						<subfield code="t">Foreign Reporting /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">News of Travels, Travelling News: The Mediation of Travel and Exploration in the Gazette de France and the Journal de l'Empire /</subfield>
+						<subfield code="r">Marius Warholm Haugen --</subfield>
+						<subfield code="t">Foreign News Reporting in Transition: James Perry and the French Constitution Ceremony /</subfield>
+						<subfield code="r">Johanne Kristiansen --</subfield>
+						<subfield code="t">Diplomatic Channels and Chinese Whispers: Reception and Transformation of the Moscow Uprising of 1648 in Sweden and France /</subfield>
+						<subfield code="r">Malte Griesse --</subfield>
+						<subfield code="t">Advertising /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">From Piety to Profit: The Development of Newspaper Advertising in the Dutch Golden Age /</subfield>
+						<subfield code="r">Arthur der Weduwen --</subfield>
+						<subfield code="t">Mercury as Merchant: The Advertisement of Novels in Eighteenth-Century Provincial English Newspapers /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg --</subfield>
+						<subfield code="t">Control /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">Establishing a State-Controlled Network for News Trading in the Swedish Baltic Provinces in the Late Seventeenth Century: Causes and Consequences /</subfield>
+						<subfield code="r">Kaarel Vanamölder --</subfield>
+						<subfield code="t">News versus Opinion: The State, the Press, and the Northern Enlightenment /</subfield>
+						<subfield code="r">Ellen Krefting --</subfield>
+						<subfield code="t">Endpiece /</subfield>
+						<subfield code="r">Siv Gøril Brandtzæg , Paul Goring and Christine Watson --</subfield>
+						<subfield code="t">Was there an Enlightenment Culture of News? /</subfield>
+						<subfield code="r">Andrew Pettegree.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">Travelling Chronicles presents fourteen episodes in the history of news, written by some of the leading scholars in the rapidly developing fields of news and newspaper studies. Ranging across eastern and western Europe and beyond, the chapters look back to the early modern period and into the eighteenth century to consider how the news of the past was gathered and spread, how news outlets gained respect and influence, how news functioned as a business, and also how the historiography of news can be conducted with the resources available to scholars today. Travelling Chronicles offers a timely analysis of early news, at a moment when historical newspaper archives are being widely digitalised and as the truth value of news in our own time undergoes intense scrutiny.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="546">
+						<subfield code="a">English</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">European newspapers</subfield>
+						<subfield code="x">History.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Journalism</subfield>
+						<subfield code="z">Europe</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">17th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Journalism</subfield>
+						<subfield code="z">Europe</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">18th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Newspaper publishing</subfield>
+						<subfield code="z">Europe</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">17th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Newspaper publishing</subfield>
+						<subfield code="z">Europe</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">18th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Journalism</subfield>
+						<subfield code="x">History.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Newspapers</subfield>
+						<subfield code="x">History.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Press</subfield>
+						<subfield code="x">History.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">Russia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">networks</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">transmission</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">media</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">knowledge</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">advertising</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">mediation</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">Europe</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">digital</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">manuscript</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">archive</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">America</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">London</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">Moscow</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">Riga</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">Sweden</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Brandtzæg, Siv Gøril,</subfield>
+						<subfield code="e">editor,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Goring, Paul,</subfield>
+						<subfield code="d">1970-</subfield>
+						<subfield code="e">editor,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Watson, Christine</subfield>
+						<subfield code="c">(Slavic literature scholar),</subfield>
+						<subfield code="e">editor,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="8" tag="776">
+						<subfield code="i">Print version:</subfield>
+						<subfield code="z">90-04-34040-8</subfield>
+						<subfield code="z">9789004340404</subfield>
+						<subfield code="w">(DLC)  2018001107</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="830">
+						<subfield code="a">Library of the Written Word</subfield>
+						<subfield code="v">66.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5388178560005506</subfield>
+						<subfield code="c">6188000480005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">KU Open Research Library</subfield>
+						<subfield code="t">Knowledge Unlatched</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911332036205506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911332036205506</recordIdentifier>
+			<recordPosition>114</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>04089nam a2200637 i 4500</leader>
+					<controlfield tag="001">9911110107205506</controlfield>
+					<controlfield tag="005">20191118111955.0</controlfield>
+					<controlfield tag="006">m     o  d</controlfield>
+					<controlfield tag="007">cr cnu||||||||</controlfield>
+					<controlfield tag="008">191118s2019    enka    ob    001 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-78831-730-0</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-78673-609-8</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-78672-603-3</subfield>
+					</datafield>
+					<datafield ind1="7" ind2=" " tag="024">
+						<subfield code="a">10.5040/9781788317306</subfield>
+						<subfield code="2">doi</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4100000009182510</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC5887710</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1117643601</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CaBNVSL)9781788317306</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC6165288</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000009182510</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">BDP</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="c">CaBNVSL</subfield>
+						<subfield code="d">CaBNVSL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="043">
+						<subfield code="a">a-tu---</subfield>
+						<subfield code="a">n-us---</subfield>
+						<subfield code="a">e-uk---</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">DR479.U5</subfield>
+						<subfield code="b">B49 2020eb</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="055">
+						<subfield code="a">JQ1805 A55 I6</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">327.561009045</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">327.561073</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Bezci, Egemen,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Turkish intelligence and the Cold War :</subfield>
+						<subfield code="b">the Turkish secret service, the US and the UK /</subfield>
+						<subfield code="c">Egemen Bezci.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="250">
+						<subfield code="a">First edition.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">London, England :</subfield>
+						<subfield code="b">I.B. Tauris,</subfield>
+						<subfield code="c">2019.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="2" tag="264">
+						<subfield code="a">[London, England] :</subfield>
+						<subfield code="b">Bloomsbury Publishing,</subfield>
+						<subfield code="c">2019.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource (305 pages)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="530">
+						<subfield code="a">Also available in print.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="505">
+						<subfield code="a">Introduction - Dark Origins of the Turkish-British-American Alliance -- 1. Machinery in Comparison -- 2. Historical Background, 1923-1945 -- 3. (Dis)Trusting your Allies: NATO and CENTO -- 4. Spies, Atoms and Signals -- 5. Counter-Subversion: Our Common 'Enemies' -- 6. Covert Action: The Turks' Hidden Hand in Syria -- 7. Conclusion: Keeping up with the Alliance -- 8. Bibliography -- Index.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">"Turkish Intelligence and the Cold War examines the hitherto unexplored history of secret intelligence cooperation between three asymmetric partners --  specifically the UK, US and Turkey -- from the end of the Second World War until the Turkey's first military coup d'état on 27 May 1960. The book shows that our understanding of the Cold War as a binary rivalry between the two blocs is too simple an approach and obscures important characteristics of intelligence cooperation among allies. Egemen Bezci shows that a pragmatic approach offers states new opportunities to protect national interests, by conducting ''intelligence diplomacy' to influence crucial areas such as nuclear weapons and to exploit cooperation in support of their own strategic imperatives. This study not only reveals previously-unexplored origins of secret intelligence cooperation between Turkey and West, but also contributes to wider academic debates on the nature of the Cold War by highlighting the potential agency of weaker states in the Western Alliance."--Bloomsbury Publishing.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Cold War.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Secret service</subfield>
+						<subfield code="z">Turkey.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="2">Middle Eastern history</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Great Britain</subfield>
+						<subfield code="x">Foreign relations</subfield>
+						<subfield code="z">Turkey.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Turkey</subfield>
+						<subfield code="x">Foreign relations</subfield>
+						<subfield code="z">Great Britain.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Turkey</subfield>
+						<subfield code="x">Foreign relations</subfield>
+						<subfield code="z">United States.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Turkey</subfield>
+						<subfield code="x">Politics and government</subfield>
+						<subfield code="y">1960-1980.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Turkey</subfield>
+						<subfield code="x">Politics and government</subfield>
+						<subfield code="y">1980-</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">United States</subfield>
+						<subfield code="x">Foreign relations</subfield>
+						<subfield code="z">Turkey.</subfield>
+					</datafield>
+					<datafield ind1="2" ind2="0" tag="610">
+						<subfield code="a">Milli İstihbarat Teşkilatı (Turkey)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="776">
+						<subfield code="z">0-7556-3649-X</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="776">
+						<subfield code="z">1-78831-325-9</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5387563690005506</subfield>
+						<subfield code="c">6186798510005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Bloomsbury Collections: Politics &amp; International Relations 2019</subfield>
+						<subfield code="t">Bloomsbury Publishing Plc</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911110107205506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911110107205506</recordIdentifier>
+			<recordPosition>115</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>01776nam  2200421Ki 4500</leader>
+					<controlfield tag="001">9911251186305506</controlfield>
+					<controlfield tag="005">20210618054807.0</controlfield>
+					<controlfield tag="006">m     o  d</controlfield>
+					<controlfield tag="007">cr#|n#---|||||</controlfield>
+					<controlfield tag="008">210609s2021    mau     ob    001 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">0-262-36608-8</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">0-262-36609-6</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">9780262366083</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4100000012038477</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC6721252</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(Au-PeEL)EBL6721252</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1255633028</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC-P)1255633028</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MaCbMITP)13603</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000012038477</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">OCoLC-P</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="e">pn</subfield>
+						<subfield code="c">OCoLC-P</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="043">
+						<subfield code="a">a-ir---</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">PN1992.934.I7</subfield>
+						<subfield code="b">A88 2021eb</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">384.55/80955</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Atwood, Blake Robert,</subfield>
+						<subfield code="d">1983-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Underground :</subfield>
+						<subfield code="b">the secret life of videocassettes in Iran /</subfield>
+						<subfield code="c">Blake Atwood.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Cambridge, Massachusetts :</subfield>
+						<subfield code="b">The MIT Press,</subfield>
+						<subfield code="c">2021.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource :</subfield>
+						<subfield code="b">illustrations</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">still image</subfield>
+						<subfield code="b">sti</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="490">
+						<subfield code="a">Infrastructures</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="588">
+						<subfield code="a">OCLC-licensed vendor bibliographic record.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">"First book length study of home video in Iran during the 1980s and 1990s, and the informal distribution infrastructure that developed in reaction to the ban on all video technology"--</subfield>
+						<subfield code="c">Provided by publisher.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Videocassettes</subfield>
+						<subfield code="z">Iran</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Video recordings</subfield>
+						<subfield code="z">Iran</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Mass media and culture</subfield>
+						<subfield code="z">Iran</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">HISTORY / Middle East / Iran</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">TECHNOLOGY &amp; ENGINEERING / History</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="653">
+						<subfield code="a">SOCIAL SCIENCE / Media Studies</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="8" tag="776">
+						<subfield code="i">Print version:</subfield>
+						<subfield code="a">Atwood, Blake Robert, 1983-</subfield>
+						<subfield code="t">Underground.</subfield>
+						<subfield code="d">Cambridge, Massachusetts : The MIT Press, 2021</subfield>
+						<subfield code="z">9780262542845</subfield>
+						<subfield code="w">(DLC)  2020044347</subfield>
+						<subfield code="w">(OCoLC)1226076451</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="830">
+						<subfield code="a">Infrastructures Ser.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379799320005506</subfield>
+						<subfield code="c">6179749980005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">MIT Press Direct 2021 Collection</subfield>
+						<subfield code="t">Mit_Press</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911251186305506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911251186305506</recordIdentifier>
+			<recordPosition>116</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>04007nam a2200853Ii 4500</leader>
+					<controlfield tag="001">9911350224005506</controlfield>
+					<controlfield tag="005">20181122172002.0</controlfield>
+					<controlfield tag="006">m     o  d</controlfield>
+					<controlfield tag="007">cr</controlfield>
+					<controlfield tag="008">181122s2018    fluab   ob    001 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-351-65413-6</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-315-15760-8</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4100000003786858</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1008972046</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(FlBoTFG)9781315157603</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000003786858</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">FlBoTFG</subfield>
+						<subfield code="c">FlBoTFG</subfield>
+						<subfield code="e">rda</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">RJ506</subfield>
+						<subfield code="b">.E18</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">PSY</subfield>
+						<subfield code="x">011000</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">MMZD</subfield>
+						<subfield code="2">bicscc</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="4" tag="082">
+						<subfield code="a">616.85/2600835</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Haltom, Cris E.,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Understanding Teen Eating Disorders :</subfield>
+						<subfield code="b">Warning Signs, Treatment Options, and Stories of Courage /</subfield>
+						<subfield code="c">by Cris E. Haltom, Cathie Simpson and Mary Tantillo.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="250">
+						<subfield code="a">First edition.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Boca Raton, FL :</subfield>
+						<subfield code="b">Routledge,</subfield>
+						<subfield code="c">2018.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource (204 pages) :</subfield>
+						<subfield code="b">1 illustrations, text file, PDF</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="530">
+						<subfield code="a">Also available in print format.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="505">
+						<subfield code="t">1. Julie: She Could Run Like the Wind 2. Claire: Trouble Adjusting to College 3. Nick: Learning to Connect 4. Anna: Resistance to Recovery 5. May: Boyfriend Abuse 6. Emma: The Secret Eater 7. Maeve: Like Mother Like Daughter 8. Preventing Eating Disorders.</subfield>
+					</datafield>
+					<datafield ind1="3" ind2=" " tag="520">
+						<subfield code="a">Understanding Teen Eating Disorders introduces readers to common teen eating disorder scenarios, their warning signs, and treatment options. Each chapter examines a teen or tween and brings the factors, whether they be environmental, genetic, co-existing conditions, etc. that contribute to his or her eating disorder, to life, while seamlessly integrating the latest research in gene inheritance, brain chemistry, and eating disorders in accessible, reader-friendly language. Each chapter provides treatment options,including outpatient, group therapy, and in-patient programs, for both the young person and the family. Each also ends with a Q &amp; A section that reflects the concerns a parent, loved one, or treatment professional may have.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="588">
+						<subfield code="a">Description based on print version record and CIP data provided by publisher; resource not viewed.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">AN.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">anorexia nervosa.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">binge and purge.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">binge eating.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">bulimia.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">CBT.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">CBT-E.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Cognitive Behavior Therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">DBT.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Dialectical Behavior Therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Enhanced Cognitive Behavior Therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">eating disorders.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Family-Based Therapy for Bulimia nervosa.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Family-Based therapy for Anorexia.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">FBT-AN.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">FBT-BN.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">family counseling.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">family therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Group Counseling.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Group Therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Group Work.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Mary Tantillo.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">MFGT.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Multifamily Group Therapy.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">nutrition counseling.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">parenting.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">parents.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">SAN.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Sub-syndromal anorexia nervosa.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">self-help.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">teen eating disorders.</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Eating disorders in adolescence</subfield>
+						<subfield code="v">Case studies.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Eating disorders in adolescence</subfield>
+						<subfield code="x">Treatment.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Eating disorders in adolescence.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Feeding and Eating Disorders.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Adolescent.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">PSYCHOLOGY / Psychopathology / Eating Disorders.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="655">
+						<subfield code="a">Electronic books.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="776">
+						<subfield code="z">1-138-06882-9</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Simpson, Cathie,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Tantillo, Mary,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5390312350005506</subfield>
+						<subfield code="c">6176611040005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Taylor &amp; Francis eBooks EBS</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911350224005506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911350224005506</recordIdentifier>
+			<recordPosition>117</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02008nam a2200505 c 4500</leader>
+					<controlfield tag="001">9911280778405506</controlfield>
+					<controlfield tag="005">20230314192109.0</controlfield>
+					<controlfield tag="008">190505s20212021sz ||||| |||| 00||||ger d</controlfield>
+					<datafield ind1=" " ind2=" " tag="015">
+						<subfield code="a">19,N19</subfield>
+						<subfield code="2">dnb</subfield>
+					</datafield>
+					<datafield ind1="7" ind2=" " tag="016">
+						<subfield code="2">DE-101</subfield>
+						<subfield code="a">1185348190</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">9783035802184</subfield>
+						<subfield code="q">: EUR 16.00 (DE), EUR 16.50 (AT), CHF 20.00 (freier Preis)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">3035802181</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLNZ-41SLSP_NETWORK)991170737955205501</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">DE-101</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="c">DE-101</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="d">CH-ZuSLS UZB ZB</subfield>
+						<subfield code="d">CH-ZuSLS HSG</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="041">
+						<subfield code="a">ger</subfield>
+						<subfield code="h">fre</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="044">
+						<subfield code="c">XA-DE</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">100</subfield>
+						<subfield code="2">IDS LU</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">100</subfield>
+						<subfield code="q">DE-101</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">100</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">150</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="084">
+						<subfield code="a">CK 2667</subfield>
+						<subfield code="2">rvk</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="6">880-01</subfield>
+						<subfield code="a">Dufourmantelle, Anne</subfield>
+						<subfield code="d">1964-2017</subfield>
+						<subfield code="4">aut</subfield>
+						<subfield code="0">(DE-588)1012243982</subfield>
+						<subfield code="e">Verfasser</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="880">
+						<subfield code="6">100-01/(B</subfield>
+						<subfield code="a">Dufourmantelle, Anne</subfield>
+						<subfield code="d">1964-2017</subfield>
+						<subfield code="0">(IDREF)057563411</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="240">
+						<subfield code="a">Défense du secret</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Verteidigung des Geheimnisses</subfield>
+						<subfield code="c">Anne Dufourmantelle ; aus dem Französischen von Luzia Gast</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Zürich</subfield>
+						<subfield code="b">Diaphanes</subfield>
+						<subfield code="c">[2021]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">167 Seiten</subfield>
+						<subfield code="c">19 cm x 12 cm, 186 g</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Secret</subfield>
+						<subfield code="0">(IDREF)027599914</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Intimité (psychologie)</subfield>
+						<subfield code="0">(IDREF)027876721</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Philosophie</subfield>
+						<subfield code="0">(IDREF)027295206</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Morale sociale</subfield>
+						<subfield code="0">(IDREF)027276023</subfield>
+						<subfield code="2">idref</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="648">
+						<subfield code="a">Ideengeschichte</subfield>
+						<subfield code="2">gnd</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Geheimnis</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4156316-5</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Philosophie</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4045791-6</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Psychoanalyse</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4047689-3</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Kultur</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4125698-0</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="6">880-02</subfield>
+						<subfield code="a">Gast, Luzia</subfield>
+						<subfield code="d">ca. 20. Jh.</subfield>
+						<subfield code="4">trl</subfield>
+						<subfield code="0">(DE-588)1243620927</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="880">
+						<subfield code="6">700-02/(B</subfield>
+						<subfield code="a">Gast, Luzia</subfield>
+						<subfield code="d">19..-....</subfield>
+						<subfield code="0">(IDREF)260370169</subfield>
+						<subfield code="4">trl</subfield>
+					</datafield>
+					<datafield ind1="4" ind2="2" tag="856">
+						<subfield code="3">Inhaltsverzeichnis</subfield>
+						<subfield code="q">PDF</subfield>
+						<subfield code="u">https://urn.ub.unibe.ch/urn:ch:slsp:3035802181:ihv:pdf</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="900">
+						<subfield code="a">OK_GND</subfield>
+						<subfield code="x">UZB/Z01/202109/somm</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="900">
+						<subfield code="a">Stoppsignal FRED</subfield>
+						<subfield code="x">UZB/Z01/202109</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="903">
+						<subfield code="a">RERO-SIGN</subfield>
+						<subfield code="5">BCUFR/20220216/hde</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="949">
+						<subfield code="a">https://urn.ub.unibe.ch/urn:ch:slsp:3035802181:ihv:pdf</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVA">
+						<subfield code="0">9911280778405506</subfield>
+						<subfield code="8">2282777420005506</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="b">HSG</subfield>
+						<subfield code="c">Basement</subfield>
+						<subfield code="d">CK 2667 V567</subfield>
+						<subfield code="e">available</subfield>
+						<subfield code="f">1</subfield>
+						<subfield code="g">0</subfield>
+						<subfield code="j">UG</subfield>
+						<subfield code="k">4</subfield>
+						<subfield code="p">1</subfield>
+						<subfield code="q">HSG</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911280778405506</recordIdentifier>
+			<recordPosition>118</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>01208nam a2200313 i 4500</leader>
+					<controlfield tag="001">9911210183105506</controlfield>
+					<controlfield tag="005">20220521225000.0</controlfield>
+					<controlfield tag="006">m     o  d |</controlfield>
+					<controlfield tag="007">cr cnu||||||||</controlfield>
+					<controlfield tag="008">220521s2019    nhu     o     000 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-63348-169-7</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4100000007987035</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC6375601</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(Au-PeEL)EBL6375601</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1099315207</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994100000007987035</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">MiAaPQ</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="e">pn</subfield>
+						<subfield code="c">MiAaPQ</subfield>
+						<subfield code="d">MiAaPQ</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">HF5415.1265</subfield>
+						<subfield code="b">.B763 2019</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="082">
+						<subfield code="a">658.872</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Brock, David,</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Video marketing blueprint :</subfield>
+						<subfield code="b">discover the easy and proven secret formula for generating massive income using the power of video marketing for your business! /</subfield>
+						<subfield code="c">David Brock.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Hanover, New Hampshire :</subfield>
+						<subfield code="b">Scribl,</subfield>
+						<subfield code="c">[2019]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="264">
+						<subfield code="c">©2019</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource (33 pages)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">If You've Got Access To A Computer and the Internet, You Have The Ability To Build A Life-Long Income &amp; Generate Emergency Cash Literally Hours From Now!... Let me ask, are you.. * Serious About Building A Long-Term Successful Internet Business and want to make a full time income from internet marketing? * Worried That You May Not Earn Enough This Month To Cover The Bills and are in ne...</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="505">
+						<subfield code="a">Intro -- Also By David Brock -- Chapter 1: video marketing blueprint -- Also By David Brock.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="588">
+						<subfield code="a">Description based on print version record.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Internet marketing.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Internet videos.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="655">
+						<subfield code="a">Electronic books.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5374496670005506</subfield>
+						<subfield code="c">6164319640005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Ebook Central Perpetual, DDA and Subscription Titles</subfield>
+						<subfield code="t">Ebook Central</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911210183105506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911210183105506</recordIdentifier>
+			<recordPosition>119</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>03853nam  2200469 i 4500</leader>
+					<controlfield tag="001">9911015665705506</controlfield>
+					<controlfield tag="005">20230126222657.0</controlfield>
+					<controlfield tag="006">m     o  d |</controlfield>
+					<controlfield tag="007">cr cnu||||||||</controlfield>
+					<controlfield tag="008">180605s2018    cau     ob    001 0 eng d</controlfield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">1-5036-0533-7</subfield>
+					</datafield>
+					<datafield ind1="7" ind2=" " tag="024">
+						<subfield code="a">10.1515/9781503605336</subfield>
+						<subfield code="2">doi</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)4340000000258158</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(MiAaPQ)EBC5317444</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(DE-B1597)564302</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(DE-B1597)9781503605336</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1198930263</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)994340000000258158</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">MiAaPQ</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="e">pn</subfield>
+						<subfield code="c">MiAaPQ</subfield>
+						<subfield code="d">MiAaPQ</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="043">
+						<subfield code="a">a-cc-sz</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="044">
+						<subfield code="a">cau</subfield>
+						<subfield code="c">US-CA</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="4" tag="050">
+						<subfield code="a">HS310.Z7</subfield>
+						<subfield code="b">.W364 2018</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="072">
+						<subfield code="a">HIS008000</subfield>
+						<subfield code="2">bisacsh</subfield>
+					</datafield>
+					<datafield ind1="0" ind2=" " tag="082">
+						<subfield code="a">369.0951/38</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Wang, Di,</subfield>
+						<subfield code="d">1956-</subfield>
+						<subfield code="e">author.</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Violence and order on the Chengdu Plain :</subfield>
+						<subfield code="b">the story of a secret brotherhood in rural China, 1939-1949 /</subfield>
+						<subfield code="c">Di Wang.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Stanford, California :</subfield>
+						<subfield code="b">Stanford University Press,</subfield>
+						<subfield code="c">[2018]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">1 online resource (xiv, 260 pages)</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="a">text</subfield>
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="a">computer</subfield>
+						<subfield code="b">c</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="a">online resource</subfield>
+						<subfield code="b">cr</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Includes bibliographical references and index.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="588">
+						<subfield code="a">Description based on print version record.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="520">
+						<subfield code="a">In 1939, residents of a rural village near Chengdu watched as Lei Mingyuan, a member of a violent secret society known as the Gowned Brothers, executed his teenage daughter. Six years later, Shen Baoyuan, a sociology student at Yenching University, arrived in the town to conduct fieldwork on the society that once held sway over local matters. She got to know Lei Mingyuan and his family, recording many rare insights about the murder and the Gowned Brothers' inner workings. Using the filicide as a starting point to examine the history, culture, and organization of the Gowned Brothers, Di Wang offers nuanced insights into the structures of local power in 1940s rural Sichuan. Moreover, he examines the influence of Western sociology and anthropology on the way intellectuals in the Republic of China perceived rural communities. By studying the complex relationship between the Gowned Brothers and the Chinese Communist Party, he offers a unique perspective on China's transition to socialism. In so doing, Wang persuasively connects a family in a rural community, with little overt influence on national destiny, to the movements and ideologies that helped shape contemporary China.</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="505">
+						<subfield code="t">Frontmatter --</subfield>
+						<subfield code="t">Contents --</subfield>
+						<subfield code="t">Maps and Figures --</subfield>
+						<subfield code="t">Preface and Acknowledgments --</subfield>
+						<subfield code="t">Introduction. Two Voices Joined in the Chengdu Plain --</subfield>
+						<subfield code="t">Chapter 1. A Public Execution --</subfield>
+						<subfield code="t">Chapter 2. A Local Band of the Gowned Brothers --</subfield>
+						<subfield code="t">Chapter 3. Spirituality and Customs --</subfield>
+						<subfield code="t">Chapter 4. Secret Codes and Language --</subfield>
+						<subfield code="t">Chapter 5. Disciplines and Dominance --</subfield>
+						<subfield code="t">Chapter 6. A Tenant Farmer and Paoge Master --</subfield>
+						<subfield code="t">Chapter 7. Entering the Paoge --</subfield>
+						<subfield code="t">Chapter 8. The Decline of Power --</subfield>
+						<subfield code="t">Chapter 9. A Family Crisis and a Rural Woman’s Fate --</subfield>
+						<subfield code="t">Chapter 10. Fall of the Paoge --</subfield>
+						<subfield code="t">Chapter 11. Looking for the Storyteller --</subfield>
+						<subfield code="t">Chapter 12. Untangling Paoge Myth --</subfield>
+						<subfield code="t">Appendix 1: Paoge Ranks --</subfield>
+						<subfield code="t">Appendix 2: Lei Family Tree (1945) --</subfield>
+						<subfield code="t">Appendix 3: Selected Ritual/Festival Events --</subfield>
+						<subfield code="t">Appendix 4: Chinese Texts of Sayings and Poems --</subfield>
+						<subfield code="t">Appendix 5: Brief Comments on Texts, Myth, and History --</subfield>
+						<subfield code="t">Character List --</subfield>
+						<subfield code="t">Notes --</subfield>
+						<subfield code="t">Works Cited --</subfield>
+						<subfield code="t">Index</subfield>
+					</datafield>
+					<datafield ind1="2" ind2="0" tag="610">
+						<subfield code="a">Ge lao hui</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Brotherhoods</subfield>
+						<subfield code="z">China</subfield>
+						<subfield code="z">Sichuan Sheng</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Filicide</subfield>
+						<subfield code="z">China</subfield>
+						<subfield code="z">Sichuan Sheng</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Power (Social sciences)</subfield>
+						<subfield code="z">China</subfield>
+						<subfield code="z">Sichuan Sheng</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="650">
+						<subfield code="a">Secret societies</subfield>
+						<subfield code="z">China</subfield>
+						<subfield code="z">Sichuan Sheng</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Sichuan Sheng (China)</subfield>
+						<subfield code="x">Rural conditions</subfield>
+						<subfield code="y">20th century.</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="776">
+						<subfield code="z">1-5036-0530-2</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5364729170005506</subfield>
+						<subfield code="c">6164319640005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Ebook Central Perpetual, DDA and Subscription Titles</subfield>
+						<subfield code="t">Ebook Central</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911015665705506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911015665705506</recordIdentifier>
+			<recordPosition>120</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02713cam  22024983u 4500</leader>
+					<controlfield tag="001">9911248474205506</controlfield>
+					<controlfield tag="008">220128s2020||||||||||||o|||||||||||engsd</controlfield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(CKB)5410000000486989</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(UtSlPG)62740</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLCZ)995410000000486989</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">UtSlPG</subfield>
+						<subfield code="b">eng</subfield>
+						<subfield code="c">IL-JeEL</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="100">
+						<subfield code="a">Post, Melville Davisson</subfield>
+						<subfield code="d">1869-1930</subfield>
+						<subfield code="e">Author</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">Walker of the Secret Service</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="260">
+						<subfield code="b">Project Gutenberg</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="542">
+						<subfield code="f">Public domain in the USA.</subfield>
+						<subfield code="k">Project Gutenberg</subfield>
+						<subfield code="i">2020-07-23</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="906">
+						<subfield code="a">BOOK</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVE">
+						<subfield code="8">5379514920005506</subfield>
+						<subfield code="c">6165459860005506</subfield>
+						<subfield code="e">Available</subfield>
+						<subfield code="m">Project Gutenberg Online Catalog</subfield>
+						<subfield code="t">Project Gutenberg</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="0">9911248474205506</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911248474205506</recordIdentifier>
+			<recordPosition>121</recordPosition>
+		</record>
+		<record>
+			<recordSchema>marcxml</recordSchema>
+			<recordPacking>xml</recordPacking>
+			<recordData>
+				<record xmlns="http://www.loc.gov/MARC21/slim">
+					<leader>02470nam a2200589 c 4500</leader>
+					<controlfield tag="001">9911317372005506</controlfield>
+					<controlfield tag="005">20230329104755.0</controlfield>
+					<controlfield tag="008">210611s2022    xxu      b    001 0 eng^^</controlfield>
+					<datafield ind1=" " ind2=" " tag="010">
+						<subfield code="a">2021026174</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">9781503615090</subfield>
+						<subfield code="q">Festeinband</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="020">
+						<subfield code="a">150361509X</subfield>
+						<subfield code="q">Festeinband</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(OCoLC)1236849842</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="035">
+						<subfield code="a">(EXLNZ-41SLSP_NETWORK)991170738409005501</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="040">
+						<subfield code="a">CSt/DLC</subfield>
+						<subfield code="b">ger</subfield>
+						<subfield code="c">DLC</subfield>
+						<subfield code="e">rda</subfield>
+						<subfield code="d">CH-ZuSLS UZB ZB</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="041">
+						<subfield code="a">eng</subfield>
+						<subfield code="h">chi</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="042">
+						<subfield code="a">pcc</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="043">
+						<subfield code="a">a-cc-ti</subfield>
+						<subfield code="a">a-cc---</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="050">
+						<subfield code="a">DS786</subfield>
+						<subfield code="b">.L4619313 2022</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="0" tag="082">
+						<subfield code="a">951/.505</subfield>
+						<subfield code="2">23</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">950</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1="7" ind2="4" tag="082">
+						<subfield code="a">320</subfield>
+						<subfield code="2">23sdnb</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="084">
+						<subfield code="a">MH 50096</subfield>
+						<subfield code="2">rvk</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="100">
+						<subfield code="a">Li, Jianglin</subfield>
+						<subfield code="d">1956-</subfield>
+						<subfield code="0">(DE-588)1118532317</subfield>
+						<subfield code="4">aut</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="240">
+						<subfield code="6">880-01</subfield>
+						<subfield code="a">Dang tie niao zai tian kong fei xiang</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="880">
+						<subfield code="6">240-01/$1</subfield>
+						<subfield code="a">當鐵鳥在天空飛翔</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="0" tag="245">
+						<subfield code="a">When the iron bird flies</subfield>
+						<subfield code="b">China's secret war in Tibet</subfield>
+						<subfield code="c">Jianglin Li ; translated by Stacy Mosher ; with a foreword by the Dalai Lama</subfield>
+					</datafield>
+					<datafield ind1="1" ind2="3" tag="246">
+						<subfield code="i">Originaltitel im Buch: Dang tieniao zai tiankong feixiang</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="1" tag="264">
+						<subfield code="a">Stanford, California</subfield>
+						<subfield code="b">Stanford University Press</subfield>
+						<subfield code="c">[2022]</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="300">
+						<subfield code="a">xxi, 550 Seiten</subfield>
+						<subfield code="b">Illustrationen, Karten</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="336">
+						<subfield code="b">txt</subfield>
+						<subfield code="2">rdacontent</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="337">
+						<subfield code="b">n</subfield>
+						<subfield code="2">rdamedia</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="338">
+						<subfield code="b">nc</subfield>
+						<subfield code="2">rdacarrier</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="504">
+						<subfield code="a">Enthält bibliographische Angaben und Index</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="546">
+						<subfield code="a">Chinesische Originalausgabe 2012 in Taipeh erschienen</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Tibet Autonomous Region (China)</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">1951-</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Tibet Autonomous Region (China)</subfield>
+						<subfield code="x">History</subfield>
+						<subfield code="y">Uprising of 1959</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">China</subfield>
+						<subfield code="x">Relations</subfield>
+						<subfield code="z">China</subfield>
+						<subfield code="z">Tibet Autonomous Region</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="0" tag="651">
+						<subfield code="a">Tibet Autonomous Region (China)</subfield>
+						<subfield code="x">Relations</subfield>
+						<subfield code="z">China</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">International relations</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst00977053</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">China</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst01206073</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">China</subfield>
+						<subfield code="z">Tibet Autonomous Region</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst01758817</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="647">
+						<subfield code="a">Uprising of 1959</subfield>
+						<subfield code="c">(Tibet Autonomous Region, China :</subfield>
+						<subfield code="d">1959)</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst01802777</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="648">
+						<subfield code="a">Since 1951</subfield>
+						<subfield code="2">fast</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="655">
+						<subfield code="a">History</subfield>
+						<subfield code="2">fast</subfield>
+						<subfield code="0">(OCoLC)fst01411628</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="648">
+						<subfield code="a">Geschichte 1956-1962</subfield>
+						<subfield code="2">gnd</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Tibet</subfield>
+						<subfield code="x">Aufstand</subfield>
+						<subfield code="g">1959</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4261166-0</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="650">
+						<subfield code="a">Politischer Konflikt</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4115589-0</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">Tibet</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4060036-1</subfield>
+					</datafield>
+					<datafield ind1=" " ind2="7" tag="651">
+						<subfield code="a">China</subfield>
+						<subfield code="2">gnd</subfield>
+						<subfield code="0">(DE-588)4009937-4</subfield>
+					</datafield>
+					<datafield ind1="0" ind2="8" tag="776">
+						<subfield code="i">Erscheint auch als</subfield>
+						<subfield code="n">Online-Ausgabe</subfield>
+						<subfield code="z">9781503629790</subfield>
+					</datafield>
+					<datafield ind1="1" ind2=" " tag="700">
+						<subfield code="a">Mosher, Stacy</subfield>
+						<subfield code="0">(DE-588)1127161407</subfield>
+						<subfield code="4">trl</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="900">
+						<subfield code="a">OK_GND</subfield>
+						<subfield code="x">UZB/Z01/202203/taub</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="900">
+						<subfield code="a">Stoppsignal FRED</subfield>
+						<subfield code="x">UZB/Z01/202203</subfield>
+					</datafield>
+					<datafield ind1=" " ind2=" " tag="AVA">
+						<subfield code="0">9911317372005506</subfield>
+						<subfield code="8">2286162190005506</subfield>
+						<subfield code="a">41SLSP_HSG</subfield>
+						<subfield code="b">HSG</subfield>
+						<subfield code="c">Basement</subfield>
+						<subfield code="d">MH 50096 L693 W5</subfield>
+						<subfield code="e">available</subfield>
+						<subfield code="f">1</subfield>
+						<subfield code="g">0</subfield>
+						<subfield code="j">UG</subfield>
+						<subfield code="k">4</subfield>
+						<subfield code="p">1</subfield>
+						<subfield code="q">HSG</subfield>
+					</datafield>
+				</record>
+			</recordData>
+			<recordIdentifier>9911317372005506</recordIdentifier>
+			<recordPosition>122</recordPosition>
+		</record>
+	</records>
+	<extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+		<xb:exact>true</xb:exact>
+		<xb:responseDate>2023-06-28T15:57:28+0200</xb:responseDate>
+	</extraResponseData>
+</searchRetrieveResponse>

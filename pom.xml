@@ -18,6 +18,7 @@
 		<version.fastexcel>0.15.4</version.fastexcel>
 		<version.javapoet>1.13.0</version.javapoet>
 		<version.junit-jupiter>5.9.3</version.junit-jupiter>
+		<version.mockserver>5.15.0</version.mockserver>
 		<version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
 		<version.maven-surefire-plugin>3.1.0</version.maven-surefire-plugin>
 		<version.exec-maven-plugin>3.1.0</version.exec-maven-plugin>
@@ -54,6 +55,18 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<version>${version.junit-jupiter}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mock-server</groupId>
+			<artifactId>mockserver-netty</artifactId>
+			<version>${version.mockserver}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mock-server</groupId>
+			<artifactId>mockserver-client-java</artifactId>
+			<version>${version.mockserver}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

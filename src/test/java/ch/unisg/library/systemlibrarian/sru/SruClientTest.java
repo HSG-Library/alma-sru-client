@@ -10,6 +10,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.mockserver.configuration.Configuration;
 import org.mockserver.integration.ClientAndServer;
 import org.mockserver.matchers.Times;
 import org.mockserver.model.HttpRequest;
@@ -31,7 +32,11 @@ class SruClientTest {
 
 	@BeforeAll
 	public void beforeAll() {
-		mockServer = ClientAndServer.startClientAndServer(9999);
+		mockServer = ClientAndServer.startClientAndServer(
+				Configuration.configuration()
+						.disableSystemOut(true),
+				9999
+		);
 	}
 
 	@AfterAll

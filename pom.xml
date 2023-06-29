@@ -120,8 +120,10 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>ch.unisg.library.systemlibrarian.sru.generator.SruQueryBuilderGenerator</mainClass>
+					<mainClass>ch.unisg.library.systemlibrarian.sru.generator.SruIndexGenerator</mainClass>
 					<arguments>
+						<!--sru base url  -->
+						<argument>https://slsp-hsg.alma.exlibrisgroup.com/view/sru/41SLSP_HSG</argument>
 						<!--output directory -->
 						<argument>target/generated-sources/</argument>
 					</arguments>

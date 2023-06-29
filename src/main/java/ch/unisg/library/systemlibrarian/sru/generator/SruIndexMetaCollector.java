@@ -9,10 +9,9 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 public class SruIndexMetaCollector {
-	private static final String BASE = "https://slsp-hsg.alma.exlibrisgroup.com/view/sru/41SLSP_HSG";
 
-	public List<SruIndexMeta> collectSruIndexMeta() {
-		final Document explainDoc = getExplainDocument()
+	public List<SruIndexMeta> collectSruIndexMeta(final String sruBaseUrl) {
+		final Document explainDoc = getExplainDocument(sruBaseUrl)
 				.orElseThrow(() -> new IllegalStateException("Could not get SRU explain response"));
 
 		final NodeList indexElements = explainDoc.getElementsByTagName("index");
@@ -22,8 +21,8 @@ public class SruIndexMetaCollector {
 				.toList();
 	}
 
-	private Optional<Document> getExplainDocument() {
-		return SruClientBuilder.create(BASE)
+	private Optional<Document> getExplainDocument(final String sruBaseUrl) {
+		return SruClientBuilder.create(sruBaseUrl)
 				.explain()
 				.getXmlResponse();
 	}

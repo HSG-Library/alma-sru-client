@@ -6,6 +6,7 @@
 
 	<groupId>ch.unisg.library.systemlibrarian</groupId>
 	<artifactId>alma-sru-client</artifactId>
+	<!-- version is automatically set to the current Git tag on release -->
 	<version>0.0-SNAPSHOT</version>
 
 	<properties>
@@ -13,19 +14,25 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- dependency versions -->
-		<version.logback-classic>1.4.7</version.logback-classic>
+		<version.logback-classic>1.4.8</version.logback-classic>
 		<version.commons-lang3>3.12.0</version.commons-lang3>
-		<version.fastexcel>0.15.4</version.fastexcel>
+		<version.fastexcel>0.15.5</version.fastexcel>
 		<version.urlbuilder>2.0.9</version.urlbuilder>
 		<version.javapoet>1.13.0</version.javapoet>
-		<version.junit-jupiter>5.9.3</version.junit-jupiter>
+		<version.junit-jupiter>5.10.0-M1</version.junit-jupiter>
 		<version.mockserver>5.15.0</version.mockserver>
 		<version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
-		<version.maven-surefire-plugin>3.1.0</version.maven-surefire-plugin>
+		<version.maven-surefire-plugin>3.1.2</version.maven-surefire-plugin>
 		<version.exec-maven-plugin>3.1.0</version.exec-maven-plugin>
 		<version.maven-source-plugin>3.3.0</version.maven-source-plugin>
 	</properties>
+	<!--
+		check for updates, but only in versions, managed in the properties:
+		mvn versions:display-property-updates
 
+		update properties:
+		mvn versions:update-properties
+	-->
 	<dependencies>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>

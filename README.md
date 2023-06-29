@@ -1,7 +1,6 @@
+![build](https://github.com/HSG-Library/alma-sru-client/actions/workflows/build.yml/badge.svg)
 [![](https://jitpack.io/v/HSG-Library/alma-sru-client.svg)](https://jitpack.io/#HSG-Library/alma-sru-client)
-
-Alma SRU client
-================
+# Alma SRU client
 This is a Java library which makes the work with the Alma SRU interface easier.
 
 The Alma SRU client has the following features:

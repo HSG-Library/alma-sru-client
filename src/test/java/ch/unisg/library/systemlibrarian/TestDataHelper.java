@@ -1,9 +1,10 @@
 package ch.unisg.library.systemlibrarian;
 
-import ch.unisg.library.systemlibrarian.sru.SruClient;
+import ch.unisg.library.systemlibrarian.helper.XPathHelper;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,6 +22,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class TestDataHelper {
@@ -33,8 +35,7 @@ public class TestDataHelper {
 	}
 
 	public Stream<MarcRecord> getRecordStreamFromXml(final String xml) {
-		final SruClient sruClient = new SruClient();
-		return sruClient.extractRecords(getDocumentFromXmlString(xml));
+		return extractRecords(getDocumentFromXmlString(xml));
 	}
 
 	public Document getDocumentFromXmlString(String xml) {
@@ -56,5 +57,13 @@ public class TestDataHelper {
 		} catch (TransformerException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public Stream<MarcRecord> extractRecords(final Document sruDocument) {
+		NodeList nodeList = new XPathHelper().query(sruDocument, "//recordData/*");
+		return IntStream.range(0, nodeList.getLength())
+				.mapToObj(nodeList::item)
+				.map(MarcRecord.Creator::new)
+				.map(MarcRecord.Creator::create);
 	}
 }

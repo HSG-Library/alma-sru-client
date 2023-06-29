@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.invoke.MethodHandles;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,13 +19,22 @@ public class SruQueryBuilder {
 	private Sort sortDirection;
 
 	private SruQueryBuilder() {
-		this.clauses = new ArrayList<>();
+		this.clauses = new LinkedList<>();
+	}
+
+	public static SruQueryBuilder create() {
+		return new SruQueryBuilder();
 	}
 
 	public static SruQueryBuilder create(final Clause clause) {
 		SruQueryBuilder sruQueryBuilder = new SruQueryBuilder();
 		sruQueryBuilder.clauses.add(clause);
 		return sruQueryBuilder;
+	}
+
+	public SruQueryBuilder add(final Clause clause) {
+		this.clauses.add(clause);
+		return this;
 	}
 
 	public SruQueryBuilder or(final Clause clause) {
@@ -49,11 +58,21 @@ public class SruQueryBuilder {
 	}
 
 	public SruQuery build() {
+		normalizeFirstClause();
 		final String queryString = clauses.stream()
 				.map(Clause::string)
 				.map(clauseString -> URLEncoder.encode(clauseString, StandardCharsets.UTF_8))
 				.collect(Collectors.joining());
 		return new SruQuery(queryString + getSortSpec());
+	}
+
+	private void normalizeFirstClause() {
+		// first clause should not be prepended with a BoolOp
+		if (clauses.size() > 0) {
+			final Clause normalized = clauses.get(0).with(BoolOp.NONE);
+			clauses.remove(0);
+			clauses.add(0, normalized);
+		}
 	}
 
 	private String getSortSpec() {

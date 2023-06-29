@@ -16,6 +16,7 @@
 		<version.logback-classic>1.4.7</version.logback-classic>
 		<version.commons-lang3>3.12.0</version.commons-lang3>
 		<version.fastexcel>0.15.4</version.fastexcel>
+		<version.urlbuilder>2.0.9</version.urlbuilder>
 		<version.javapoet>1.13.0</version.javapoet>
 		<version.junit-jupiter>5.9.3</version.junit-jupiter>
 		<version.mockserver>5.15.0</version.mockserver>
@@ -44,6 +45,11 @@
 			<groupId>org.dhatim</groupId>
 			<artifactId>fastexcel-reader</artifactId>
 			<version>${version.fastexcel}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.mikael</groupId>
+			<artifactId>urlbuilder</artifactId>
+			<version>${version.urlbuilder}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.squareup</groupId>

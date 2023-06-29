@@ -1,12 +1,12 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
-import ch.unisg.library.systemlibrarian.sru.SruClient;
+import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
+import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;
+import ch.unisg.library.systemlibrarian.sru.query.index.Idx;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
 
 import java.io.File;
 import java.util.HashMap;
@@ -89,14 +89,12 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 	}
 
 	private List<String> findRelatedRecord(final Stream<String> systemNumbers) {
-		final String query = systemNumbers
-				.map(number -> "other_system_number==" + number)
-				.collect(Collectors.joining(" OR "));
-		final SruUrl sruUrl = SruUrlBuilder.create(getBaseUrl())
-				.query(new SruQuery(query))
-				.build();
-		SruClient sru = new SruClient();
-		Stream<MarcRecord> records = sru.getAllRecords(sruUrl);
+		SruQueryBuilder sruQueryBuilder = SruQueryBuilder.create();
+		systemNumbers.forEach(number -> sruQueryBuilder.or(Idx.otherSystemNumber().equalTo(number)));
+		final SruQuery query = sruQueryBuilder.build();
+		Stream<MarcRecord> records = SruClientBuilder.create(getBaseUrl())
+				.query(query)
+				.getAllRecords();
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

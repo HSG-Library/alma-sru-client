@@ -1,8 +1,6 @@
 package ch.unisg.library.systemlibrarian.sru.generator;
 
-import ch.unisg.library.systemlibrarian.sru.SruClient;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
+import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
@@ -25,10 +23,8 @@ public class SruIndexMetaCollector {
 	}
 
 	private Optional<Document> getExplainDocument() {
-		SruClient sruClient = new SruClient();
-		SruUrl sruUrl = SruUrlBuilder.create(BASE)
-				.operation(SruUrlBuilder.Operation.EXPLAIN)
-				.build();
-		return sruClient.getXmlResponse(sruUrl);
+		return SruClientBuilder.create(BASE)
+				.explain()
+				.getXmlResponse();
 	}
 }

@@ -1,15 +1,18 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
-import ch.unisg.library.systemlibrarian.sru.SruClient;
+import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
+import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;
+import ch.unisg.library.systemlibrarian.sru.query.index.Idx;
 import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import ch.unisg.library.systemlibrarian.sru.response.Subfield;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrl;
-import ch.unisg.library.systemlibrarian.sru.url.SruUrlBuilder;
 
 import java.io.File;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -104,19 +107,16 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 	}
 
 	private List<String> findRootRecord(final String id) {
-		final List<String> queryParts = new ArrayList<>();
+		final SruQueryBuilder sruQueryBuilder = SruQueryBuilder.create(Idx.otherSystemNumberActive_035().equalTo(id));
 		// search in 001/mms_id only if id is numerical, otherwise SRU will throw an error
 		if (id.matches("[0-9]+")) {
-			queryParts.add("mms_id=" + id);
+			sruQueryBuilder.or(Idx.mmsId().equalTo(id));
 		}
 		// always search in 035$$a
-		queryParts.add("other_system_number_active_035==" + id);
-		final String query = String.join(" OR ", queryParts);
-		final SruUrl sruUrl = SruUrlBuilder.create(BASE)
-				.query(new SruQuery(query))
-				.build();
-		SruClient sru = new SruClient();
-		Stream<MarcRecord> records = sru.getAllRecords(sruUrl);
+		final SruQuery query = sruQueryBuilder.build();
+		Stream<MarcRecord> records = SruClientBuilder.create(BASE)
+				.query(query)
+				.getAllRecords();
 		return records
 				.map(record -> record.getControlfield("001"))
 				.flatMap(Optional::stream)

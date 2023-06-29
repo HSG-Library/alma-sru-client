@@ -61,7 +61,7 @@ public class SruQueryBuilder {
 		normalizeFirstClause();
 		final String queryString = clauses.stream()
 				.map(Clause::string)
-				.map(clauseString -> URLEncoder.encode(clauseString, StandardCharsets.UTF_8))
+				.map(this::urlEncode)
 				.collect(Collectors.joining());
 		return new SruQuery(queryString + getSortSpec());
 	}
@@ -77,8 +77,13 @@ public class SruQueryBuilder {
 
 	private String getSortSpec() {
 		if (sortBy != null && sortDirection != null) {
-			return " sortBy " + sortBy.getName() + "/" + sortDirection.getValue();
+			final String sortSpec = " sortBy " + sortBy.getName() + "/" + sortDirection.getValue();
+			return urlEncode(sortSpec);
 		}
 		return StringUtils.EMPTY;
+	}
+
+	private String urlEncode(final String value) {
+		return URLEncoder.encode(value, StandardCharsets.UTF_8).replaceAll("\\+", "%20");
 	}
 }

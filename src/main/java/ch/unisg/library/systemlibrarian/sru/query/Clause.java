@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class Clause {
 	private final static String SPACE = " ";
+	private final static String DOT = ".";
 	private final SruIndex index;
 	private final String value;
 	private final Relation relation;
@@ -44,7 +45,7 @@ public class Clause {
 	}
 
 	public String string() {
-		final String clauseString = this.index.getName() + SPACE + relation.getValue() + SPACE + StringUtils.wrapIfMissing(value, '"');
+		final String clauseString = this.index.getSet() + DOT + this.index.getName() + SPACE + relation.getValue() + SPACE + StringUtils.wrapIfMissing(value, '"');
 		if (BoolOp.NONE == boolOp) {
 			return clauseString;
 		}

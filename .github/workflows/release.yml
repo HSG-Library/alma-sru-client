@@ -18,7 +18,7 @@ jobs:
           then
               # the tag looks like a version number: proceed with release
               mvn --batch-mode --errors --show-version --no-transfer-progress versions:set -DnewVersion=${GITHUB_REF_NAME}
-              mvn --batch-mode --errors --show-version --no-transfer-progress --settings .github/settings.xml -Prelease package
+              mvn --batch-mode --errors --show-version --no-transfer-progress -Prelease package
           fi
       - name: Create Release and upload artifact
         uses: marvinpinto/action-automatic-releases@latest

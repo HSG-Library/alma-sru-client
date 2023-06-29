@@ -1,11 +1,8 @@
 package ch.unisg.library.systemlibrarian.sru.client;
 
 import io.mikael.urlbuilder.UrlBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 
-import java.lang.invoke.MethodHandles;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;

@@ -2,8 +2,10 @@ name: build and test
 on:
   push:
     branches: [ '*' ]
+    paths: ['src/**']
   pull_request:
     branches: [ '*' ]
+    paths: ['src/**']
 jobs:
   build:
     runs-on: ubuntu-latest

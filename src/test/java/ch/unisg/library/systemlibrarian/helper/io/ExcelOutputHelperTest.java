@@ -1,4 +1,4 @@
-package ch.unisg.library.systemlibrarian.file;
+package ch.unisg.library.systemlibrarian.helper.io;
 
 import org.junit.jupiter.api.Test;
 

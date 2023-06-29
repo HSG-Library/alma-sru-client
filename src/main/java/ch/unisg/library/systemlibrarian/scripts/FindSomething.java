@@ -1,6 +1,6 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
-import ch.unisg.library.systemlibrarian.file.XmlOutputHelper;
+import ch.unisg.library.systemlibrarian.helper.io.XmlOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.client.SruQueryClient;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;

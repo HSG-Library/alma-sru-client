@@ -1,7 +1,7 @@
 package ch.unisg.library.systemlibrarian.scripts;
 
-import ch.unisg.library.systemlibrarian.file.ExcelInputHelper;
-import ch.unisg.library.systemlibrarian.file.ExcelOutputHelper;
+import ch.unisg.library.systemlibrarian.helper.io.ExcelInputHelper;
+import ch.unisg.library.systemlibrarian.helper.io.ExcelOutputHelper;
 import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;

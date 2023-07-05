@@ -28,6 +28,11 @@ public class SubField {
 		return text;
 	}
 
+	public SubField setText(final String value) {
+		subFieldNode.setTextContent(value);
+		return this;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;

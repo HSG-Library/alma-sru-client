@@ -4,9 +4,9 @@ import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.index.Idx;
-import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
+import ch.unisg.library.systemlibrarian.sru.response.ControlField;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
-import ch.unisg.library.systemlibrarian.sru.response.Subfield;
+import ch.unisg.library.systemlibrarian.sru.response.SubField;
 
 import java.io.File;
 import java.util.HashMap;
@@ -83,9 +83,9 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 			return Stream.empty();
 		}
 		MarcRecord firstMarcRecord = result.get();
-		List<Subfield> fields35a = firstMarcRecord.findSubfield("035", "a");
+		List<SubField> fields35a = firstMarcRecord.findSubFields("035", "a");
 		return fields35a.stream()
-				.map(Subfield::getText);
+				.map(SubField::getText);
 	}
 
 	private List<String> findRelatedRecord(final Stream<String> systemNumbers) {
@@ -96,9 +96,9 @@ public class FindRelatedRecords implements SruExcelInputOutputScript {
 				.query(query)
 				.getAllRecords();
 		return records
-				.map(record -> record.getControlfield("001"))
+				.map(record -> record.getControlField("001"))
 				.flatMap(Optional::stream)
-				.map(Controlfield::getText)
+				.map(ControlField::getText)
 				.collect(Collectors.toList());
 	}
 }

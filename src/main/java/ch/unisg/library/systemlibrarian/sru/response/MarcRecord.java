@@ -18,22 +18,22 @@ public class MarcRecord {
 		this.recordNode = recordNode;
 	}
 
-	public Optional<Controlfield> getControlfield(final String tag) {
+	public Optional<ControlField> getControlField(final String tag) {
 		final String query = "./controlfield[@tag=\"" + tag + "\"]";
 		NodeList controlfields = xPathQuery(recordNode, query);
-		return transformToControlfield(controlfields);
+		return transformToControlField(controlfields);
 	}
 
-	public List<Datafield> findDatafield(final String tag) {
+	public List<DataField> findDataFields(final String tag) {
 		final String query = "./datafield[@tag=\"" + tag + "\"]";
 		NodeList datafields = xPathQuery(recordNode, query);
-		return transformToDatafields(datafields);
+		return transformToDataFields(datafields);
 	}
 
-	public List<Subfield> findSubfield(final String tag, final String code) {
+	public List<SubField> findSubFields(final String tag, final String code) {
 		final String query = "./datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
 		NodeList subfields = xPathQuery(recordNode, query);
-		return transformToSubfields(subfields);
+		return transformToSubFields(subfields);
 	}
 
 	public Node getRecordNode() {
@@ -50,33 +50,33 @@ public class MarcRecord {
 		}
 	}
 
-	private List<Datafield> transformToDatafields(final NodeList nodeList) {
+	private List<DataField> transformToDataFields(final NodeList nodeList) {
 		return IntStream.range(0, nodeList.getLength())
 				.mapToObj(nodeList::item)
 				.filter(node -> node.getNodeType() != Node.TEXT_NODE)
-				.map(Datafield.Creator::new)
-				.map(Datafield.Creator::create)
+				.map(DataField.Creator::new)
+				.map(DataField.Creator::create)
 				.collect(Collectors.toList());
 	}
 
-	private List<Subfield> transformToSubfields(final NodeList nodeList) {
+	private List<SubField> transformToSubFields(final NodeList nodeList) {
 		return IntStream.range(0, nodeList.getLength())
 				.mapToObj(nodeList::item)
 				.filter(node -> node.getNodeType() != Node.TEXT_NODE)
-				.map(Subfield.Creator::new)
-				.map(Subfield.Creator::create)
+				.map(SubField.Creator::new)
+				.map(SubField.Creator::create)
 				.collect(Collectors.toList());
 	}
 
-	private Optional<Controlfield> transformToControlfield(final NodeList nodeList) {
+	private Optional<ControlField> transformToControlField(final NodeList nodeList) {
 		if (nodeList.getLength() < 1) {
 			return Optional.empty();
 		}
 		return IntStream.range(0, nodeList.getLength())
 				.mapToObj(nodeList::item)
 				.filter(node -> node.getNodeType() != Node.TEXT_NODE)
-				.map(Controlfield.Creator::new)
-				.map(Controlfield.Creator::create)
+				.map(ControlField.Creator::new)
+				.map(ControlField.Creator::create)
 				.findFirst();
 	}
 

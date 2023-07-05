@@ -2,7 +2,7 @@ package ch.unisg.library.systemlibrarian.sru.client;
 
 import ch.unisg.library.systemlibrarian.TestDataHelper;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
-import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
+import ch.unisg.library.systemlibrarian.sru.response.ControlField;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -58,7 +58,7 @@ class SruClientTest {
 				.query(fakeQuery)
 				.getSingleRecord();
 		assertTrue(singleRecord.isPresent());
-		assertEquals("Schutzorganisation der privaten Aktiengesellschaften", singleRecord.get().findSubfield("264", "b").get(0).getText());
+		assertEquals("Schutzorganisation der privaten Aktiengesellschaften", singleRecord.get().findSubFields("264", "b").get(0).getText());
 	}
 
 	@Test
@@ -185,7 +185,7 @@ class SruClientTest {
 		List<MarcRecord> recordList = records.toList();
 		assertEquals(12, recordList.size());
 		MarcRecord record5 = recordList.get(4);
-		Optional<Controlfield> controlfield001 = record5.getControlfield("001");
+		Optional<ControlField> controlfield001 = record5.getControlField("001");
 		assertTrue(controlfield001.isPresent());
 		final String text001 = controlfield001.get().getText();
 		assertEquals("991008097069705501", text001);

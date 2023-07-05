@@ -1,7 +1,7 @@
 package ch.unisg.library.systemlibrarian.helper.io;
 
 import ch.unisg.library.systemlibrarian.helper.XmlHelper;
-import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
+import ch.unisg.library.systemlibrarian.sru.response.ControlField;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
@@ -31,9 +31,9 @@ public class XmlOutputHelper {
 
 	public void saveEachRecord(final Stream<MarcRecord> records, final Path outputDirectory) {
 		records.forEach(record -> {
-			Optional<Controlfield> mmsId = record.getControlfield("001");
+			Optional<ControlField> mmsId = record.getControlField("001");
 			final String fileName = mmsId
-					.map(Controlfield::getText)
+					.map(ControlField::getText)
 					.map(id -> String.join(getDatePrefix(), id + ".xml"))
 					.orElseGet(() -> String.join(getDatePrefix(), RandomStringUtils.randomAlphabetic(10), "-") + ".xml");
 			final String recordXml = record.toString();

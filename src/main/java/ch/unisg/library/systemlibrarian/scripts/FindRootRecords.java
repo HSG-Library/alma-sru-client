@@ -4,9 +4,9 @@ import ch.unisg.library.systemlibrarian.sru.client.SruClientBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.SruQuery;
 import ch.unisg.library.systemlibrarian.sru.query.SruQueryBuilder;
 import ch.unisg.library.systemlibrarian.sru.query.index.Idx;
-import ch.unisg.library.systemlibrarian.sru.response.Controlfield;
+import ch.unisg.library.systemlibrarian.sru.response.ControlField;
 import ch.unisg.library.systemlibrarian.sru.response.MarcRecord;
-import ch.unisg.library.systemlibrarian.sru.response.Subfield;
+import ch.unisg.library.systemlibrarian.sru.response.SubField;
 
 import java.io.File;
 import java.util.HashMap;
@@ -83,11 +83,11 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 		}
 		MarcRecord firstMarcRecord = result.get();
 
-		List<Subfield> fields773 = firstMarcRecord.findSubfield("773", "w");
-		List<Subfield> fields800 = firstMarcRecord.findSubfield("800", "w");
-		List<Subfield> fields810 = firstMarcRecord.findSubfield("810", "w");
-		List<Subfield> fields811 = firstMarcRecord.findSubfield("811", "w");
-		List<Subfield> fields830 = firstMarcRecord.findSubfield("830", "w");
+		List<SubField> fields773 = firstMarcRecord.findSubFields("773", "w");
+		List<SubField> fields800 = firstMarcRecord.findSubFields("800", "w");
+		List<SubField> fields810 = firstMarcRecord.findSubFields("810", "w");
+		List<SubField> fields811 = firstMarcRecord.findSubFields("811", "w");
+		List<SubField> fields830 = firstMarcRecord.findSubFields("830", "w");
 
 		return Stream.of(fields773.stream(),
 						fields800.stream(),
@@ -96,7 +96,7 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 						fields830.stream())
 				.reduce(Stream::concat)
 				.orElseGet(Stream::empty)
-				.map(Subfield::getText);
+				.map(SubField::getText);
 	}
 
 	private List<String> searchRootRecords(Stream<String> systemNumbers) {
@@ -118,9 +118,9 @@ public class FindRootRecords implements SruExcelInputOutputScript {
 				.query(query)
 				.getAllRecords();
 		return records
-				.map(record -> record.getControlfield("001"))
+				.map(record -> record.getControlField("001"))
 				.flatMap(Optional::stream)
-				.map(Controlfield::getText)
+				.map(ControlField::getText)
 				.collect(Collectors.toList());
 	}
 }

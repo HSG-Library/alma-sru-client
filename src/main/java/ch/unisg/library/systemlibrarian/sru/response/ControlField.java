@@ -4,12 +4,12 @@ import org.w3c.dom.Node;
 
 import java.util.Objects;
 
-public class Controlfield {
+public class ControlField {
 
 	private final String tag;
 	private final String text;
 
-	Controlfield(final String tag, final String text) {
+	ControlField(final String tag, final String text) {
 		this.tag = tag;
 		this.text = text;
 	}
@@ -27,7 +27,7 @@ public class Controlfield {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 
-		Controlfield that = (Controlfield) o;
+		ControlField that = (ControlField) o;
 
 		if (!Objects.equals(tag, that.tag)) return false;
 		return Objects.equals(text, that.text);
@@ -55,10 +55,10 @@ public class Controlfield {
 			this.node = node;
 		}
 
-		public Controlfield create() {
+		public ControlField create() {
 			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
 			final String text = node.getTextContent();
-			return new Controlfield(tag, text);
+			return new ControlField(tag, text);
 		}
 	}
 }

@@ -5,13 +5,19 @@ import org.w3c.dom.Node;
 import java.util.Objects;
 
 
-public class Subfield {
+public class SubField {
+	private final Node subFieldNode;
 	private final String code;
 	private final String text;
 
-	Subfield(final String code, final String text) {
+	SubField(final Node subFieldNode, final String code, final String text) {
+		this.subFieldNode = subFieldNode;
 		this.code = code;
 		this.text = text;
+	}
+
+	public Node getSubFieldNode() {
+		return subFieldNode;
 	}
 
 	public String getCode() {
@@ -27,7 +33,7 @@ public class Subfield {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 
-		Subfield subfield = (Subfield) o;
+		SubField subfield = (SubField) o;
 
 		if (!Objects.equals(code, subfield.code)) return false;
 		return Objects.equals(text, subfield.text);
@@ -55,10 +61,10 @@ public class Subfield {
 			this.node = node;
 		}
 
-		public Subfield create() {
+		public SubField create() {
 			final String code = node.getAttributes().getNamedItem("code").getNodeValue();
 			final String text = node.getTextContent();
-			return new Subfield(code, text);
+			return new SubField(node, code, text);
 		}
 	}
 }

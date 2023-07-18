@@ -19,6 +19,7 @@
 		<version.fastexcel>0.15.5</version.fastexcel>
 		<version.urlbuilder>2.0.9</version.urlbuilder>
 		<version.javapoet>1.13.0</version.javapoet>
+		<version.jakarta-annotation-api>2.1.0</version.jakarta-annotation-api>
 		<version.junit-jupiter>5.10.0-M1</version.junit-jupiter>
 		<version.mockserver>5.15.0</version.mockserver>
 		<version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
@@ -63,6 +64,11 @@
 			<groupId>com.squareup</groupId>
 			<artifactId>javapoet</artifactId>
 			<version>${version.javapoet}</version>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+			<version>${version.jakarta-annotation-api}</version>
 		</dependency>
 		<!-- Test -->
 		<dependency>

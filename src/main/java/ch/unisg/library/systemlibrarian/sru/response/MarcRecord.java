@@ -1,6 +1,8 @@
 package ch.unisg.library.systemlibrarian.sru.response;
 
 import ch.unisg.library.systemlibrarian.helper.XmlHelper;
+import jakarta.annotation.Nullable;
+import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -20,8 +22,8 @@ public class MarcRecord {
 
 	public Optional<ControlField> getControlField(final String tag) {
 		final String query = "./controlfield[@tag=\"" + tag + "\"]";
-		NodeList controlfields = xPathQuery(recordNode, query);
-		return transformToControlField(controlfields);
+		NodeList controlFields = xPathQuery(recordNode, query);
+		return transformToControlField(controlFields);
 	}
 
 	public List<DataField> findDataFields(final String tag) {
@@ -30,8 +32,34 @@ public class MarcRecord {
 		return transformToDataFields(datafields);
 	}
 
+	public List<DataField> findDataFields(
+			final String tag,
+			@Nullable final String ind1,
+			@Nullable final String ind2
+	) {
+		final String query = "./datafield[@tag=\"" + tag + "\"]" +
+				"[@ind1=\"" + StringUtils.defaultIfBlank(ind1, StringUtils.SPACE) + "\"]" +
+				"[@ind2=\"" + StringUtils.defaultIfBlank(ind2, StringUtils.SPACE) + "\"]";
+		NodeList dataFields = xPathQuery(recordNode, query);
+		return transformToDataFields(dataFields);
+	}
+
 	public List<SubField> findSubFields(final String tag, final String code) {
 		final String query = "./datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
+		NodeList subfields = xPathQuery(recordNode, query);
+		return transformToSubFields(subfields);
+	}
+
+	public List<SubField> findSubFields(
+			final String tag,
+			@Nullable final String ind1,
+			@Nullable final String ind2,
+			final String code
+	) {
+		final String query = "./datafield[@tag=\"" + tag + "\"]" +
+				"[@ind1=\"" + StringUtils.defaultIfBlank(ind1, StringUtils.SPACE) + "\"]" +
+				"[@ind2=\"" + StringUtils.defaultIfBlank(ind2, StringUtils.SPACE) + "\"]" +
+				"/subfield[@code=\"" + code + "\"]";
 		NodeList subfields = xPathQuery(recordNode, query);
 		return transformToSubFields(subfields);
 	}

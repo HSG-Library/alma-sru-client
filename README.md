@@ -17,13 +17,13 @@ The Alma SRU Client is a Java library that simplifies working with the Alma SRU 
 
 ```java
 SruQuery query = SruQueryBuilder
-		.create(Idx.inventoryNumber().containsPhrase("MN"))
-		.and(Idx.inventoryDate().greaterThan("2020-10-12"))
-		.and(Idx.inventoryDate().lessThan("2020-10-14"))
-		.or(Idx.mmsId().equalTo("9953760105506"))
-		.or(Idx.title().contains("rain"))
-		.sort(Idx.title(),Sort.ASCENDING)
-		.build();
+    .create(Idx.inventoryNumber().containsPhrase("MN"))
+    .and(Idx.inventoryDate().greaterThan("2020-10-12"))
+    .and(Idx.inventoryDate().lessThan("2020-10-14"))
+    .or(Idx.mmsId().equalTo("9953760105506"))
+    .or(Idx.title().contains("rain"))
+    .sort(Idx.title(),Sort.ASCENDING)
+    .build();
 ```
 
 ### Submit a query with the SRU client
@@ -31,9 +31,9 @@ SruQuery query = SruQueryBuilder
 ```java
 Stream<MarcRecord> records = SruClientBuilder
     .create("https://your-domain.alma.exlibrisgroup.com/view/sru/YOUR-INST")
-		.query(query)
-		.maximumRecords(12)
-		.getRecords();
+    .query(query)
+    .maximumRecords(12)
+    .getRecords();
 ```
 
 ### Get an explain response with the SRU client
@@ -41,8 +41,8 @@ Stream<MarcRecord> records = SruClientBuilder
 ```java
 Optional<Document> explainResponse = SruClientBuilder
     .create("https://your-domain.alma.exlibrisgroup.com/view/sru/YOUR-INST")
-		.explain()
-		.getXmlResponse();
+    .explain()
+    .getXmlResponse();
 ```
 
 ### Get subfields `800$$w` from response
@@ -50,12 +50,12 @@ Optional<Document> explainResponse = SruClientBuilder
 ```java
 Optional<MarcRecord> singleRecord = SruClientBuilder
     .create("https://your-domain.alma.exlibrisgroup.com/view/sru/YOUR-INST")
-		.query(query)
-		.getSingleRecord();
+    .query(query)
+    .getSingleRecord();
 
 List<Subfield> fields800w = singleRecord
-		.map(record -> record.findSubfields("800","w"))
-		.orElse(List.of());
+    .map(record -> record.findSubfields("800","w"))
+    .orElse(List.of());
 ```
 
 ### Get all records and write them to an XML file
@@ -87,7 +87,7 @@ SruQuery query = SruQueryBuilder
 Stream<MarcRecord> allRecords = SruClientBuilder
     .create("https://your-domain.alma.exlibrisgroup.com/view/sru/YOUR-INST")
     .query(query)
-    .maximumRecords(55)
+    .maximumRecords(45)
     .getRecords();
 
 List<List<String>> rows = allRecords.map(record -> {
@@ -138,25 +138,6 @@ and with the according release tag:
 	<artifactId>alma-sru-client</artifactId>
 	<version>[latest-tag]</version>
 </dependency>
-```
-
-### Gradle
-
-```groovy
-allprojects {
-    repositories {
-        ...
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-and with the according release tag:
-
-```groovy
-dependencies {
-    implementation 'com.github.HSG-Library:alma-sru-client:<latest-tag>'
-}
 ```
 
 ### Without dependency management

@@ -1,12 +1,12 @@
 package ch.unisg.library.systemlibrarian.sru.response;
 
+import ch.unisg.library.systemlibrarian.helper.XPathHelper;
 import ch.unisg.library.systemlibrarian.helper.XmlHelper;
 import jakarta.annotation.Nullable;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import javax.xml.xpath.*;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -15,20 +15,22 @@ import java.util.stream.IntStream;
 
 public class MarcRecord {
 	private final Node recordNode;
+	private final XPathHelper xPath;
 
 	MarcRecord(final Node recordNode) {
 		this.recordNode = recordNode;
+		this.xPath = new XPathHelper();
 	}
 
 	public Optional<ControlField> getControlField(final String tag) {
 		final String query = "./controlfield[@tag=\"" + tag + "\"]";
-		NodeList controlFields = xPathQuery(recordNode, query);
+		NodeList controlFields = xPath.query(recordNode, query);
 		return transformToControlField(controlFields);
 	}
 
 	public List<DataField> findDataFields(final String tag) {
 		final String query = "./datafield[@tag=\"" + tag + "\"]";
-		NodeList datafields = xPathQuery(recordNode, query);
+		NodeList datafields = xPath.query(recordNode, query);
 		return transformToDataFields(datafields);
 	}
 
@@ -40,13 +42,13 @@ public class MarcRecord {
 		final String query = "./datafield[@tag=\"" + tag + "\"]" +
 				"[@ind1=\"" + StringUtils.defaultIfBlank(ind1, StringUtils.SPACE) + "\"]" +
 				"[@ind2=\"" + StringUtils.defaultIfBlank(ind2, StringUtils.SPACE) + "\"]";
-		NodeList dataFields = xPathQuery(recordNode, query);
+		NodeList dataFields = xPath.query(recordNode, query);
 		return transformToDataFields(dataFields);
 	}
 
 	public List<SubField> findSubFields(final String tag, final String code) {
 		final String query = "./datafield[@tag=\"" + tag + "\"]/subfield[@code=\"" + code + "\"]";
-		NodeList subfields = xPathQuery(recordNode, query);
+		NodeList subfields = xPath.query(recordNode, query);
 		return transformToSubFields(subfields);
 	}
 
@@ -60,22 +62,12 @@ public class MarcRecord {
 				"[@ind1=\"" + StringUtils.defaultIfBlank(ind1, StringUtils.SPACE) + "\"]" +
 				"[@ind2=\"" + StringUtils.defaultIfBlank(ind2, StringUtils.SPACE) + "\"]" +
 				"/subfield[@code=\"" + code + "\"]";
-		NodeList subfields = xPathQuery(recordNode, query);
+		NodeList subfields = xPath.query(recordNode, query);
 		return transformToSubFields(subfields);
 	}
 
 	public Node getRecordNode() {
 		return recordNode;
-	}
-
-	private NodeList xPathQuery(final Node node, final String xPathQuery) {
-		XPath xpath = XPathFactory.newInstance().newXPath();
-		try {
-			XPathExpression expr = xpath.compile(xPathQuery);
-			return (NodeList) expr.evaluate(node, XPathConstants.NODESET);
-		} catch (XPathExpressionException e) {
-			throw new RuntimeException(e);
-		}
 	}
 
 	private List<DataField> transformToDataFields(final NodeList nodeList) {

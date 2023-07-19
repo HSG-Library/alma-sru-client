@@ -98,17 +98,17 @@ public class SruIndexMeta {
 	public static class Factory {
 		public SruIndexMeta create(final Node indexNode) {
 			final XPathHelper xPathHelper = new XPathHelper();
-			final String title = xPathHelper.queryText(indexNode, "./title/text()");
+			final String title = xPathHelper.queryText(indexNode, "./title/text()").orElse("no-title");
 			final boolean sortable = xPathHelper.queryExists(indexNode, "./@sort");
-			final String name = xPathHelper.queryText(indexNode, "./map/name/text()");
-			final String indexSet = xPathHelper.queryText(indexNode, "./map/name/@set");
+			final String name = xPathHelper.queryText(indexNode, "./map/name/text()").orElse("no-name");
+			final String indexSet = xPathHelper.queryText(indexNode, "./map/name/@set").orElse("no-set");
 			final List<Relation> relations = new ArrayList<>();
 			final boolean emptyTerm = xPathHelper.queryExists(indexNode, "./configInfo/supports[@type='emptyTerm']");
 			final NodeList supports = xPathHelper.query(indexNode, "./configInfo/supports");
 			IntStream.range(0, supports.getLength())
 					.mapToObj(supports::item)
 					.forEach(supportsNode -> {
-						final String type = xPathHelper.queryText(supportsNode, "./@type");
+						final String type = xPathHelper.queryText(supportsNode, "./@type").orElse("no-type");
 						if ("relation".equals(type)) {
 							final String relationValue = supportsNode.getTextContent();
 							Relation.findByOperator(relationValue)

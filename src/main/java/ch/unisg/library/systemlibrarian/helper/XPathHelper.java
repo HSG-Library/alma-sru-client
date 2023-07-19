@@ -8,6 +8,7 @@ import org.w3c.dom.NodeList;
 import javax.xml.namespace.QName;
 import javax.xml.xpath.*;
 import java.lang.invoke.MethodHandles;
+import java.util.Optional;
 
 public class XPathHelper {
 
@@ -18,18 +19,55 @@ public class XPathHelper {
 		this.xPathFactory = XPathFactory.newInstance();
 	}
 
+	/**
+	 * Returns matching nodes as NodeList
+	 * If the query does not match any node, an empty NodeList is returned
+	 *
+	 * @param node       node to be queried
+	 * @param xPathQuery xpath query
+	 * @return NodeList with matching nodes
+	 */
 	public NodeList query(final Node node, final String xPathQuery) {
 		return evaluate(node, xPathQuery, XPathConstants.NODESET, NodeList.class);
 	}
 
-	public Node querySingle(final Node node, final String xPathQuery) {
-		return evaluate(node, xPathQuery, XPathConstants.NODE, Node.class);
+	/**
+	 * Returns the first matching node.
+	 * If the query does not match any node, an empty Optional is returned
+	 *
+	 * @param node       node to be queried
+	 * @param xPathQuery xpath query
+	 * @return optional Node
+	 */
+	public Optional<Node> querySingle(final Node node, final String xPathQuery) {
+		if (queryExists(node, xPathQuery)) {
+			return Optional.of(evaluate(node, xPathQuery, XPathConstants.NODE, Node.class));
+		}
+		return Optional.empty();
 	}
 
-	public String queryText(final Node node, final String xPathQuery) {
-		return evaluate(node, xPathQuery, XPathConstants.STRING, String.class);
+	/**
+	 * Returns the text content of the first matching node.
+	 * If the query does not match any node, an empty Optional is returned
+	 *
+	 * @param node       node to be queried
+	 * @param xPathQuery xpath query
+	 * @return optional String
+	 */
+	public Optional<String> queryText(final Node node, final String xPathQuery) {
+		if (queryExists(node, xPathQuery)) {
+			return Optional.of(evaluate(node, xPathQuery, XPathConstants.STRING, String.class));
+		}
+		return Optional.empty();
 	}
 
+	/**
+	 * Returns true if the query matches any node, otherwise false.
+	 *
+	 * @param node       node to be queried
+	 * @param xPathQuery xpath query
+	 * @return true if query matches, false if not
+	 */
 	public boolean queryExists(final Node node, final String xPathQuery) {
 		return evaluate(node, xPathQuery, XPathConstants.BOOLEAN, Boolean.class);
 	}

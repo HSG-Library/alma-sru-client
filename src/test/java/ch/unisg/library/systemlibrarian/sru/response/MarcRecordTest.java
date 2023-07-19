@@ -82,6 +82,16 @@ class MarcRecordTest {
 		assertEquals("test-999-a", subField999ExplicitNoIndA.get(0).getText());
 	}
 
+	@Test
+	public void testGetLeader() throws IOException {
+		MarcRecord record = getTestData();
+		Optional<Leader> leader = record.getLeader();
+		assertTrue(leader.isPresent());
+		assertEquals("2", leader.get().getSubfieldCount());
+		assertEquals("n", leader.get().getRecordStatus());
+		assertEquals("a", leader.get().getTypeOfRecord());
+	}
+
 	private MarcRecord getTestData() throws IOException {
 		TestDataHelper testDataHelper = new TestDataHelper();
 		String xmlString = testDataHelper.getResponseFromFile("records-1-modified-for-query-test.xml");

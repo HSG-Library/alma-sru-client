@@ -22,6 +22,14 @@ public class MarcRecord {
 		this.xPath = new XPathHelper();
 	}
 
+	public Optional<Leader> getLeader() {
+		final String query = "./leader";
+		final Optional<String> leader = xPath.queryText(recordNode, query);
+		return leader
+				.filter(l -> l.length() == Leader.LEADER_LENGTH)
+				.map(Leader::new);
+	}
+
 	public Optional<ControlField> getControlField(final String tag) {
 		final String query = "./controlfield[@tag=\"" + tag + "\"]";
 		NodeList controlFields = xPath.query(recordNode, query);

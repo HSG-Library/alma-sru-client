@@ -1,5 +1,6 @@
 package ch.unisg.library.systemlibrarian.sru.response;
 
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -10,12 +11,20 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class DataField {
+
+	public static final String ELEMENT = "datafield";
+	public static final String TAG_ATTRIBUTE = "tag";
+	public static final String IND1_ATTRIBUTE = "ind1";
+	public static final String IND2_ATTRIBUTE = "ind2";
+
+	private final Node dataFieldNode;
 	private final String tag;
 	private final String ind1;
 	private final String ind2;
 	private final List<SubField> subFields;
 
-	DataField(final String tag, final String ind1, final String ind2, final List<SubField> subFields) {
+	DataField(final Node dataFiledNode, final String tag, final String ind1, final String ind2, final List<SubField> subFields) {
+		this.dataFieldNode = dataFiledNode;
 		this.tag = tag;
 		this.ind1 = ind1;
 		this.ind2 = ind2;
@@ -42,6 +51,18 @@ public class DataField {
 		return subFields.stream()
 				.filter(subfield -> subfield.getCode().equals(code))
 				.findFirst();
+	}
+
+	public SubField addSubField(final String code, final String text) {
+		Element subField = dataFieldNode.getOwnerDocument().createElement(SubField.ELEMENT);
+		subField.setAttribute(SubField.CODE_ATTRIBUTE, code);
+		subField.setTextContent(text);
+		dataFieldNode.appendChild(subField);
+		return new SubField.Creator(subField).create();
+	}
+
+	public void remove() {
+		dataFieldNode.getParentNode().removeChild(dataFieldNode);
 	}
 
 	@Override
@@ -94,7 +115,7 @@ public class DataField {
 					.map(SubField.Creator::new)
 					.map(SubField.Creator::create)
 					.collect(Collectors.toList());
-			return new DataField(tag, ind1, ind2, subFields);
+			return new DataField(node, tag, ind1, ind2, subFields);
 		}
 	}
 }

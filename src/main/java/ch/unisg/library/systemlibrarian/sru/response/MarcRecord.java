@@ -4,6 +4,7 @@ import ch.unisg.library.systemlibrarian.helper.XPathHelper;
 import ch.unisg.library.systemlibrarian.helper.XmlHelper;
 import jakarta.annotation.Nullable;
 import org.apache.commons.lang3.StringUtils;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -34,6 +35,12 @@ public class MarcRecord {
 		final String query = "./controlfield[@tag=\"" + tag + "\"]";
 		NodeList controlFields = xPath.query(recordNode, query);
 		return transformToControlField(controlFields);
+	}
+
+	public List<DataField> getAllDataFields() {
+		final String query = "./datafield";
+		NodeList dataFields = xPath.query(recordNode, query);
+		return transformToDataFields(dataFields);
 	}
 
 	public List<DataField> findDataFields(final String tag) {
@@ -72,6 +79,19 @@ public class MarcRecord {
 				"/subfield[@code=\"" + code + "\"]";
 		NodeList subfields = xPath.query(recordNode, query);
 		return transformToSubFields(subfields);
+	}
+
+	public DataField addDataField(final String tag) {
+		return addDataField(tag, " ", " ");
+	}
+
+	public DataField addDataField(final String tag, final String ind1, final String ind2) {
+		Element dataField = recordNode.getOwnerDocument().createElement(DataField.ELEMENT);
+		dataField.setAttribute(DataField.TAG_ATTRIBUTE, tag);
+		dataField.setAttribute(DataField.IND1_ATTRIBUTE, ind1);
+		dataField.setAttribute(DataField.IND2_ATTRIBUTE, ind2);
+		recordNode.appendChild(dataField);
+		return new DataField.Creator(dataField).create();
 	}
 
 	public Node getRecordNode() {

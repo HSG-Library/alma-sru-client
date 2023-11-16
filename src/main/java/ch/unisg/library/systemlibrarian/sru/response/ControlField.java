@@ -6,12 +6,19 @@ import java.util.Objects;
 
 public class ControlField {
 
+	private final Node controlFieldNode;
 	private final String tag;
 	private final String text;
 
-	ControlField(final String tag, final String text) {
+
+	ControlField(final Node controlFieldNode, final String tag, final String text) {
+		this.controlFieldNode = controlFieldNode;
 		this.tag = tag;
 		this.text = text;
+	}
+
+	public Node getControlFieldNode() {
+		return controlFieldNode;
 	}
 
 	public String getTag() {
@@ -20,6 +27,15 @@ public class ControlField {
 
 	public String getText() {
 		return text;
+	}
+
+	public ControlField setText(final String value) {
+		controlFieldNode.setTextContent(value);
+		return this;
+	}
+
+	public void remove() {
+		controlFieldNode.getParentNode().removeChild(controlFieldNode);
 	}
 
 	@Override
@@ -58,7 +74,7 @@ public class ControlField {
 		public ControlField create() {
 			final String tag = node.getAttributes().getNamedItem("tag").getNodeValue();
 			final String text = node.getTextContent();
-			return new ControlField(tag, text);
+			return new ControlField(node, tag, text);
 		}
 	}
 }

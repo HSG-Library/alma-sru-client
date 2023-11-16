@@ -6,6 +6,10 @@ import java.util.Objects;
 
 
 public class SubField {
+
+	public static final String ELEMENT = "subfield";
+	public static final String CODE_ATTRIBUTE = "code";
+
 	private final Node subFieldNode;
 	private final String code;
 	private final String text;
@@ -31,6 +35,15 @@ public class SubField {
 	public SubField setText(final String value) {
 		subFieldNode.setTextContent(value);
 		return this;
+	}
+
+	public void remove() {
+		subFieldNode.getParentNode().removeChild(subFieldNode);
+	}
+
+	public DataField getParentDataField() {
+		Node dataFieldNode = subFieldNode.getParentNode();
+		return new DataField.Creator(dataFieldNode).create();
 	}
 
 	@Override

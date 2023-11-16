@@ -30,7 +30,7 @@ public class ExcelInputHelper {
 	}
 
 	public List<String> loadColumnWithFilter(final String column, final Predicate<String> textFilter) {
-		LOG.info("Loading data from file '{}'", xlsxFile);
+		LOG.info("Loading column '{}' from file '{}'", column, xlsxFile);
 		try (ReadableWorkbook wb = new ReadableWorkbook(xlsxFile)) {
 			Sheet firstSheet = wb.getFirstSheet();
 			return firstSheet.openStream()

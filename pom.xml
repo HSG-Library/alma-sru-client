@@ -14,18 +14,19 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- dependency versions -->
-		<version.logback-classic>1.4.8</version.logback-classic>
-		<version.commons-lang3>3.12.0</version.commons-lang3>
-		<version.fastexcel>0.15.5</version.fastexcel>
+		<version.logback-classic>1.4.11</version.logback-classic>
+		<version.commons-lang3>3.13.0</version.commons-lang3>
+		<version.fastexcel>0.16.1</version.fastexcel>
 		<version.urlbuilder>2.0.9</version.urlbuilder>
 		<version.javapoet>1.13.0</version.javapoet>
-		<version.jakarta-annotation-api>2.1.0</version.jakarta-annotation-api>
-		<version.junit-jupiter>5.10.0-M1</version.junit-jupiter>
+		<version.jakarta-annotation-api>3.0.0-M1</version.jakarta-annotation-api>
+		<version.junit-jupiter>5.10.1</version.junit-jupiter>
 		<version.mockserver>5.15.0</version.mockserver>
 		<version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
-		<version.maven-surefire-plugin>3.1.2</version.maven-surefire-plugin>
+		<version.maven-surefire-plugin>3.2.2</version.maven-surefire-plugin>
 		<version.exec-maven-plugin>3.1.0</version.exec-maven-plugin>
 		<version.maven-source-plugin>3.3.0</version.maven-source-plugin>
+		<version.maven-resources-plugin>3.3.1</version.maven-resources-plugin>
 	</properties>
 	<!--
 		check for updates, but only in versions, managed in the properties:
@@ -147,6 +148,11 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${version.maven-surefire-plugin}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>${version.maven-resources-plugin}</version>
 			</plugin>
 		</plugins>
 	</build>

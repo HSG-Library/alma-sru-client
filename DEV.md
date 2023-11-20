@@ -3,7 +3,11 @@
 ## How to release
 ### Via GitHub actions
 - Release workflow: [.github/workflows/release.yml](.github/workflows/release.yml)
-- Release is triggered when a tag, which matches a semver format
+- Release is triggered when a tag which matches a semver format is created
+```shell
+git tag -a 0.0.0 -m "0.0.0"
+git push --tags
+```
 - Maven runs automatically and the release will be uploaded to GitHub
 
 ### Manually

@@ -7,8 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -18,7 +18,7 @@ jobs:
           then
               # the tag looks like a version number: proceed with release
               mvn --batch-mode --errors --show-version --no-transfer-progress versions:set -DnewVersion=${GITHUB_REF_NAME}
-              mvn --batch-mode --errors --show-version --no-transfer-progress -Prelease package
+              mvn --batch-mode --errors --show-version --no-transfer-progress --strict-checksums -Prelease package
           fi
       - name: Create Release and upload artifact
         uses: marvinpinto/action-automatic-releases@latest
